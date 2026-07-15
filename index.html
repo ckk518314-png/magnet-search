@@ -1,157 +1,120 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#000000">
-<title>🧲 磁力搜索</title>
-<style>
-  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-  body {
-    margin: 0; padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
-    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 100%);
-    color: #e6e6e6; min-height: 100vh;
-  }
-  .header { padding: 50px 20px 20px; text-align: center; }
-  .header h1 {
-    margin: 0; font-size: 28px;
-    background: linear-gradient(90deg, #00d4ff, #7b2ff7);
-    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-  }
-  .header .sub { color: #888; font-size: 12px; margin-top: 6px; }
-  .search-box { padding: 0 20px; margin-bottom: 16px; }
-  .search-box input {
-    width: 100%; padding: 14px 16px; font-size: 16px;
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 12px; color: #fff; outline: none;
-  }
-  .search-box input::placeholder { color: #666; }
-  .search-box input:focus { border-color: #00d4ff; }
-  .stats { text-align: center; color: #666; font-size: 12px; padding: 0 20px 12px; }
-  .list { padding: 0 16px 80px; }
-  .item {
-    background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 12px; padding: 14px; margin-bottom: 10px;
-    transition: all 0.2s;
-  }
-  .item:active { transform: scale(0.98); background: rgba(255,255,255,0.1); }
-  .item .name { font-size: 15px; color: #fff; font-weight: 500; word-break: break-all; margin-bottom: 6px; }
-  .item .meta { font-size: 11px; color: #888; display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
-  .item .meta span {
-    background: rgba(0,212,255,0.1); color: #00d4ff;
-    padding: 2px 8px; border-radius: 4px;
-  }
-  .item .cat { background: rgba(123,47,247,0.15) !important; color: #b794f6 !important; }
-  .item .hash { font-family: monospace; font-size: 11px; color: #555; word-break: break-all; margin-bottom: 10px; }
-  .item .actions { display: flex; gap: 8px; }
-  .item .actions a, .item .actions button {
-    flex: 1; padding: 10px; text-align: center; border-radius: 8px;
-    text-decoration: none; font-size: 13px; font-weight: 500;
-    border: none; cursor: pointer; transition: opacity 0.2s;
-  }
-  .btn-copy { background: #333; color: #fff; }
-  .btn-magnet { background: linear-gradient(90deg, #00d4ff, #7b2ff7); color: #fff; }
-  .actions a:active, .actions button:active { opacity: 0.7; }
-  .empty, .loading { text-align: center; padding: 60px 20px; color: #666; }
-  .toast {
-    position: fixed; bottom: 30px; left: 50%;
-    transform: translateX(-50%) translateY(100px);
-    background: rgba(0,0,0,0.9); color: #fff;
-    padding: 12px 20px; border-radius: 8px; font-size: 14px;
-    transition: transform 0.3s; z-index: 1000;
-  }
-  .toast.show { transform: translateX(-50%) translateY(0); }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>磁力搜索</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #f5f5f5;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .magnet-link {
+            word-break: break-all;
+            font-size: 13px;
+            color: #666;
+            background: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .count {
+            color: #666;
+            margin-top: 10px;
+        }
+        .status {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>🧲 磁力搜索</h1>
-  <div class="sub">全网磁力资源 · 离线可用</div>
+<div class="box">
+    <h2>🧲 磁力搜索</h2>
+    <input type="text" id="searchInput" placeholder="输入电影名或关键词..." onkeyup="search()">
+    <button onclick="search()">搜索</button>
+    <div id="status" class="status">加载数据中...</div>
+    <div id="results"></div>
 </div>
-
-<div class="search-box">
-  <input id="kw" type="search" placeholder="输入关键词,如:Avengers 4K" 
-         autocomplete="off" autocorrect="off" autocapitalize="off">
-</div>
-
-<div class="stats" id="stats">加载中...</div>
-
-<div class="list" id="list">
-  <div class="loading">🔄 加载中...</div>
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script src="data.js"></script>
 <script>
-const $ = id => document.getElementById(id);
-const list = $("list"), stats = $("stats"), kw = $("kw"), toast = $("toast");
+    let allData = [];
 
-function showToast(msg) {
-  toast.textContent = msg;
-  toast.classList.add("show");
-  setTimeout(() => toast.classList.remove("show"), 1800);
-}
+    // 加载 data.js 并解析里面的 JSON 数据
+    fetch('data.js?t=' + new Date().getTime())
+        .then(res => {
+            if (!res.ok) throw new Error('data.js 加载失败');
+            return res.text();
+        })
+        .then(text => {
+            // 提取 window.MAGNET_DATA = [...] 中的数组
+            const match = text.match(/window\.MAGNET_DATA\s*=\s*([\s\S]*?);/);
+            if (!match) throw new Error('无法解析 data.js 中的数组');
+            allData = JSON.parse(match[1]);
+            document.getElementById('status').innerHTML = `✅ 已加载 ${allData.length} 条磁力资源`;
+        })
+        .catch(err => {
+            document.getElementById('status').innerHTML = `⚠️ 数据加载失败: ${err.message}`;
+            console.error(err);
+        });
 
-function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, c => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-  }[c]));
-}
-
-function copyMagnet(m) {
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(m).then(() => showToast("✅ 已复制"));
-  } else {
-    const ta = document.createElement("textarea");
-    ta.value = m; document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); showToast("✅ 已复制"); }
-    catch (e) { showToast("❌ 复制失败"); }
-    document.body.removeChild(ta);
-  }
-}
-
-function search(q = "") {
-  q = q.toLowerCase();
-  let items = window.MAGNET_DATA;
-  if (q) {
-    items = items.filter(m => m.name.toLowerCase().includes(q) || m.hash.includes(q));
-  }
-  stats.textContent = `📦 共 ${items.length} 条磁力`;
-  if (!items.length) {
-    list.innerHTML = '<div class="empty">📭 没有结果,试试别的关键词</div>';
-    return;
-  }
-  list.innerHTML = items.map(item => `
-    <div class="item">
-      <div class="name">${escapeHtml(item.name)}</div>
-      <div class="meta">
-        ${item.category ? `<span class="cat">${escapeHtml(item.category)}</span>` : ''}
-        ${item.size ? `<span>${escapeHtml(item.size)}</span>` : ''}
-        <span>${escapeHtml(item.source || 'BT')}</span>
-      </div>
-      <div class="hash">${item.hash}</div>
-      <div class="actions">
-        <button class="btn-copy" onclick="copyMagnet('${item.magnet.replace(/'/g, "\\'")}')">📋 复制</button>
-        <a class="btn-magnet" href="${item.magnet}">🧲 打开</a>
-      </div>
-    </div>
-  `).join("");
-}
-
-let timer = null;
-kw.addEventListener("input", e => {
-  clearTimeout(timer);
-  timer = setTimeout(() => search(e.target.value.trim()), 200);
-});
-
-stats.textContent = `📦 共 ${window.MAGNET_DATA.length} 条磁力`;
-search();
+    function search() {
+        const keyword = document.getElementById('searchInput').value.trim().toLowerCase();
+        const container = document.getElementById('results');
+        if (!keyword) {
+            container.innerHTML = '';
+            return;
+        }
+        const filtered = allData.filter(item => {
+            const name = item.name || '';
+            return name.toLowerCase().includes(keyword);
+        });
+        if (filtered.length === 0) {
+            container.innerHTML = '<p>😅 没找到相关资源，试试别的关键词</p>';
+            return;
+        }
+        let html = `<p>🎯 找到 ${filtered.length} 个结果</p>`;
+        filtered.slice(0, 50).forEach(item => {
+            const name = item.name || '未知资源';
+            const magnet = item.magnet || item.hash || '';
+            html += `<div class="item">
+                <div><strong>${name}</strong></div>
+                <div class="magnet-link">🔗 <a href="${magnet}" target="_blank">点击打开磁力链接</a></div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    }
 </script>
-
 </body>
 </html>
