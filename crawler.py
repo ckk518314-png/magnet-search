@@ -397,8 +397,135 @@ def scrape_skrbt(query):
         print(f"  ❌ SkrBT 失败: {e}")
     return results
 
-# ========== 可继续添加更多站点 ==========
-# 例如：磁力猫、磁力宝、滴滴磁力等，结构类似
+def scrape_torrentgalaxy(query):
+    """TorrentGalaxy (https://torrentgalaxy.to)"""
+    results = []
+    try:
+        url = f"https://torrentgalaxy.to/torrents.php?search={quote(query)}&sort=id&order=desc"
+        resp = safe_request(url)
+        if not resp:
+            return results
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for row in soup.find_all("div", class_="tgxtablerow"):
+            name_tag = row.find("a", title=True)
+            if not name_tag:
+                continue
+            name = name_tag.get_text(strip=True)
+            magnet_tag = row.find("a", href=True)
+            magnet = ""
+            for a in row.find_all("a", href=True):
+                href = a.get("href", "")
+                if href.startswith("magnet:"):
+                    magnet = href
+                    break
+            size_cell = row.find("span", class_="badge-secondary")
+            size = size_cell.get_text(strip=True) if size_cell else ""
+            results.append({
+                "name": name,
+                "magnet": magnet,
+                "size": size,
+                "seed": "",
+                "leech": "",
+                "date": "",
+                "source": "TorrentGalaxy"
+            })
+        time.sleep(random.uniform(*DELAY_RANGE))
+    except Exception as e:
+        print(f"  ❌ TorrentGalaxy 失败: {e}")
+    return results
+
+def scrape_torlock(query):
+    """TorLock (https://torlock.com)"""
+    results = []
+    try:
+        url = f"https://torlock.com/all/torrents/{quote(query)}.html"
+        resp = safe_request(url)
+        if not resp:
+            return results
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for article in soup.find_all("article"):
+            name_tag = article.find("a", href=True)
+            if not name_tag:
+                continue
+            name = name_tag.get_text(strip=True)
+            magnet_tag = article.find("a", href=lambda x: x and x.startswith("magnet:"))
+            magnet = magnet_tag["href"] if magnet_tag else ""
+            results.append({
+                "name": name,
+                "magnet": magnet,
+                "size": "",
+                "seed": "",
+                "leech": "",
+                "date": "",
+                "source": "TorLock"
+            })
+        time.sleep(random.uniform(*DELAY_RANGE))
+    except Exception as e:
+        print(f"  ❌ TorLock 失败: {e}")
+    return results
+
+def scrape_glodls(query):
+    """Glodls (https://glodls.to)"""
+    results = []
+    try:
+        url = f"https://glodls.to/search/{quote(query)}/"
+        resp = safe_request(url)
+        if not resp:
+            return results
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for row in soup.find_all("tr"):
+            name_tag = row.find("a", class_="torrent-name")
+            if not name_tag:
+                continue
+            name = name_tag.get_text(strip=True)
+            magnet_tag = row.find("a", href=lambda x: x and x.startswith("magnet:"))
+            magnet = magnet_tag["href"] if magnet_tag else ""
+            results.append({
+                "name": name,
+                "magnet": magnet,
+                "size": "",
+                "seed": "",
+                "leech": "",
+                "date": "",
+                "source": "Glodls"
+            })
+        time.sleep(random.uniform(*DELAY_RANGE))
+    except Exception as e:
+        print(f"  ❌ Glodls 失败: {e}")
+    return results
+
+def scrape_magnetdl(query):
+    """MagnetDL (https://magnetdl.com)"""
+    results = []
+    try:
+        url = f"https://www.magnetdl.com/search/?m=1&q={quote(query)}"
+        resp = safe_request(url)
+        if not resp:
+            return results
+        soup = BeautifulSoup(resp.text, "html.parser")
+        for row in soup.find_all("tr"):
+            cells = row.find_all("td")
+            if len(cells) < 2:
+                continue
+            name_tag = cells[1].find("a")
+            if not name_tag:
+                continue
+            name = name_tag.get_text(strip=True)
+            magnet_tag = row.find("a", href=lambda x: x and x.startswith("magnet:"))
+            magnet = magnet_tag["href"] if magnet_tag else ""
+            results.append({
+                "name": name,
+                "magnet": magnet,
+                "size": "",
+                "seed": "",
+                "leech": "",
+                "date": "",
+                "source": "MagnetDL"
+            })
+        time.sleep(random.uniform(*DELAY_RANGE))
+    except Exception as e:
+        print(f"  ❌ MagnetDL 失败: {e}")
+    return results
 
 # ================== 超大规模多语言关键词（含成人，仅供学习） ==================
 KEYWORDS = [
@@ -577,6 +704,142 @@ KEYWORDS = [
     "sm视频", "调教视频", "成人直播", "裸聊", "视频聊天", "裸照",
     "性爱", "做爱", "高潮", "阴蒂", "阴道", "阴茎", "睾丸", "精液",
     "月经", "更年期", "性病", "艾滋病", "安全套", "避孕药",
+    # ========== 新增关键词（扩充至 500+） ==========
+    "Top Gun Maverick", "Everything Everywhere All at Once", "The Whale", "Elvis",
+    "The Batman", "Bullet Train", "Uncharted", "Sonic the Hedgehog", "Morbius",
+    "Fantastic Beasts", "The Northman", "Ambulance", "The Lost City", "Downton Abbey",
+    "Lightyear", "Minions The Rise of Gru", "Thor Love and Thunder", "Black Adam",
+    "Smile", "The Menu", "Violent Night", "Babylon", "The Fabelmans", "Women Talking",
+    "Tár", "Aftersun", "Decision to Leave", "RRR", "The Banshees of Inisherin",
+    "Triangle of Sadness", "Glass Onion", "The Pale Blue Eye", "Knock at the Cabin",
+    "Ant-Man and the Wasp Quantumania", "Creed III", "Scream VI", "John Wick Chapter 4",
+    "The Super Mario Bros Movie", "Evil Dead Rise", "Guardians of the Galaxy Vol 3",
+    "Fast X", "The Little Mermaid 2023", "Across the Spider-Verse", "Transformers Rise of the Beasts",
+    "Elemental", "The Flash 2023", "Indiana Jones and the Dial of Destiny",
+    "Mission Impossible Dead Reckoning", "Oppenheimer 2023", "Barbie 2023",
+    "Teenage Mutant Ninja Turtles", "Blue Beetle", "Gran Turismo", "The Equalizer 3",
+    "The Nun II", "A Haunting in Venice", "The Creator", "Saw X", "The Exorcist Believer",
+    "Killers of the Flower Moon", "Five Nights at Freddy's", "The Marvels",
+    "The Hunger Games Ballad of Songbirds", "Wish 2023", "Napoleon 2023", "Aquaman 2",
+    "Wonka 2023", "The Color Purple 2023", "Migration", "Ferrari", "Poor Things 2023",
+    "Anyone But You", "The Iron Claw", "The Beekeeper", "Mean Girls 2024",
+    "Dune Part Two 2024", "Kung Fu Panda 4", "Ghostbusters Frozen Empire",
+    "Godzilla x Kong The New Empire", "Civil War 2024", "Abigail 2024",
+    "Challengers 2024", "The Fall Guy 2024", "Kingdom of the Planet of the Apes",
+    "Furiosa", "Bad Boys Ride or Die", "Inside Out 2 2024", "A Quiet Place Day One",
+    "Despicable Me 4 2024", "Twisters 2024", "Deadpool and Wolverine", "Alien Romulus",
+    "Borderlands 2024", "Beetlejuice 2", "Joker Folie à Deux", "Venom 3",
+    "Gladiator 2", "Wicked", "Moana 2", "Sonic 3", "Mufasa The Lion King",
+    "The Matrix 4", "John Wick 3", "Mission Impossible Fallout", "Avengers Endgame",
+    "Avengers Infinity War", "Captain America Civil War", "Thor Ragnarok",
+    "Guardians of the Galaxy Vol 2", "Doctor Strange", "Spider-Man Homecoming",
+    "Spider-Man Far From Home", "Spider-Man No Way Home", "Black Panther Wakanda Forever",
+    "Shang-Chi", "Eternals", "Black Widow", "Captain Marvel", "Ant-Man and the Wasp",
+    "Deadpool 2", "Logan", "The Wolverine", "X-Men First Class", "X-Men Days of Future Past",
+    "X-Men Apocalypse", "Dark Phoenix", "Star Wars The Force Awakens", "Rogue One",
+    "The Last Jedi", "Solo", "The Rise of Skywalker", "Mad Max Fury Road",
+    "Jurassic World", "Fallen Kingdom", "Dominion", "Godzilla 2014", "King of the Monsters",
+    "Godzilla vs Kong", "Skull Island", "Pacific Rim Uprising", "The Meg", "The Meg 2",
+    "Avatar The Way of Water", "Avatar 3", "Titanic 3D", "Terminator Dark Fate",
+    "Terminator Genisys", "Predator 2018", "Alien Covenant", "Alien Prometheus",
+    "The Matrix Resurrections", "The Matrix Reloaded", "The Matrix Revolutions",
+    "Fight Club", "Seven", "The Game", "Zodiac", "Gone Girl", "The Social Network",
+    "The Girl with the Dragon Tattoo", "The Curious Case of Benjamin Button",
+    "Arrival", "Blade Runner 2049", "Sicario", "Prisoners", "Enemy", "Incendies",
+    "Whiplash", "La La Land", "First Man", "Babylon 2022",
+    "Toy Story 4", "Toy Story 3", "Toy Story 2", "Monsters Inc", "Ratatouille",
+    "WALL-E", "The Incredibles 2", "Brave", "Onward", "Coco", "Inside Out 2",
+    "Elemental 2023", "Elio", "How to Train Your Dragon 3", "The Hidden World",
+    "Kung Fu Panda 3", "Shrek Forever After", "Puss in Boots The Last Wish",
+    "The Croods 2", "The Boss Baby", "Trolls", "Trolls Band Together",
+    "Migration 2023", "The Bad Guys", "Minions The Rise of Gru", "Sing 2",
+    "Inception 4K", "Interstellar 4K", "The Dark Knight 4K", "Dunkirk 4K",
+    "Tenet 4K", "Oppenheimer 4K", "Dune 2021 4K", "Dune Part Two 4K",
+    "Blade Runner 2049 4K", "1917 4K", "Mad Max Fury Road 4K", "Joker 4K",
+    "Parasite 4K", "The Revenant 4K", "Gravity 4K", "The Martian 4K",
+    "Arrival 4K", "La La Land 4K", "Whiplash 4K", "Baby Driver 4K",
+    "Fury 4K", "Hacksaw Ridge 4K", "Saving Private Ryan 4K", "Schindler 4K",
+    "The Pianist 4K", "Apocalypse Now 4K", "Full Metal Jacket 4K", "Platoon 4K",
+    "Gladiator 4K", "Braveheart 4K", "The Patriot 4K", "Troy 4K",
+    "300 4K", "Kingdom of Heaven 4K", "The Last Samurai 4K", "Mulan 2020 4K",
+    "Crouching Tiger Hidden Dragon 4K", "Hero 4K", "House of Flying Daggers 4K",
+    "The Grandmaster 4K", "Ip Man 4K", "Enter the Dragon 4K", "The Raid 4K",
+    "The Raid 2 4K", "John Wick 4K", "John Wick 2 4K", "John Wick 3 4K",
+    "Nobody 4K", "Atomic Blonde 4K", "The Bourne Identity 4K", "Bourne Supremacy 4K",
+    "Bourne Ultimatum 4K", "Jason Bourne 4K", "Casino Royale 4K", "Skyfall 4K",
+    "Spectre 4K", "No Time to Die 4K", "Mission Impossible 1 4K", "MI 2 4K",
+    "MI 3 4K", "MI Ghost Protocol 4K", "MI Rogue Nation 4K", "MI Fallout 4K",
+    "Die Hard 4K", "Die Hard 2 4K", "Die Hard with a Vengeance 4K", "Speed 4K",
+    "The Terminator 4K", "Terminator 2 4K", "Predator 4K", "RoboCop 4K",
+    "Total Recall 4K", "Starship Troopers 4K", "Independence Day 4K", "Men in Black 4K",
+    "Jurassic Park 4K", "The Lost World Jurassic Park 4K", "JP3 4K", "E.T. 4K",
+    "Close Encounters 4K", "Back to the Future 4K", "BTTF 2 4K", "BTTF 3 4K",
+    "Ghostbusters 1984 4K", "Ghostbusters 2 4K", "The Goonies 4K", "Gremlins 4K",
+    "Indiana Jones 4K", "Temple of Doom 4K", "Last Crusade 4K", "Raiders 4K",
+    "The Rock 4K", "Con Air 4K", "Face-Off 4K", "Broken Arrow 4K", "True Lies 4K",
+    "Jingle All the Way 4K", "Home Alone 4K", "Home Alone 2 4K", "Elf 4K",
+    "The Grinch 4K", "The Polar Express 4K", "Nightmare Before Christmas 4K",
+    "Mean Girls 2004 4K", "Clueless 4K", "Legally Blonde 4K", "Bridesmaids 4K",
+    "Pitch Perfect 4K", "Easy A 4K", "Superbad 4K", "The Hangover 4K",
+    "Step Brothers 4K", "Anchorman 4K", "Dumb and Dumber 4K", "Ace Ventura 4K",
+    "The Mask 4K", "Bruce Almighty 4K", "Liar Liar 4K", "Patch Adams 4K",
+    "American Pie 4K", "Scary Movie 4K", "Not Another Teen Movie 4K", "10 Things I Hate About You 4K",
+    "She's All That 4K", "Never Been Kissed 4K", "The Proposal 4K", "The Devil Wears Prada 4K",
+    "Pretty Woman 4K", "My Best Friend's Wedding 4K", "Notting Hill 4K", "Love Actually 4K",
+    "Four Weddings and a Funeral 4K", "Bridget Jones 4K", "About Time 4K", "The Time Traveler's Wife 4K",
+    "Eternal Sunshine 4K", "Her 4K", "Lost in Translation 4K", "Moonrise Kingdom 4K",
+    "The Grand Budapest Hotel 4K", "The Darjeeling Limited 4K", "The Life Aquatic 4K",
+    "The Royal Tenenbaums 4K", "Rushmore 4K", "Fantastic Mr Fox 4K", "Isle of Dogs 4K",
+    "The French Dispatch 4K", "Asteroid City 4K", "The Shape of Water 4K",
+    "Pan's Labyrinth 4K", "Hellboy 4K", "Hellboy 2 4K", "Pacific Rim 4K",
+    "Crimson Peak 4K", "The Devil's Backbone 4K", "Kubo and the Two Strings 4K",
+    "ParaNorman 4K", "Coraline 4K", "The Boxtrolls 4K", "Missing Link 4K",
+    "Wendell and Wild 4K", "Guillermo del Toro's Pinocchio 4K", "Spider-Man Into the Spider-Verse 4K",
+    "The Lego Movie 4K", "The Lego Batman Movie 4K", "Lego Ninjago 4K", "Lego Movie 2 4K",
+    "Megamind 4K", "Monsters vs Aliens 4K", "Shark Tale 4K", "Shrek 2 4K", "Shrek 3 4K",
+    "Over the Hedge 4K", "Flushed Away 4K", "Bee Movie 4K", "Rango 4K",
+    "The Adventures of Tintin 4K", "A Scanner Darkly 4K", "Waking Life 4K",
+    "Scanner Darkly 4K", "Paprika 4K", "Perfect Blue 4K", "Millennium Actress 4K",
+    "Tokyo Godfathers 4K", "Akira 4K", "Ghost in the Shell 4K", "Ghost in the Shell 2 4K",
+    "Ninja Scroll 4K", "Vampire Hunter D Bloodlust 4K", "Redline 4K",
+    "Summer Wars 4K", "The Girl Who Leapt Through Time 4K", "Wolf Children 4K",
+    "The Boy and the Beast 4K", "Mirai 4K", "Belle 4K", "Weathering with You 4K",
+    "Suzume 4K", "Your Name 4K", "5 Centimeters per Second 4K", "The Garden of Words 4K",
+    "A Silent Voice 4K", "I Want to Eat Your Pancreas 4K", "Josee the Tiger and the Fish 4K",
+    "Ride Your Wave 4K", "Maquia 4K", "Violet Evergarden 4K", "Bubble 4K",
+    "Words Bubble Up Like Soda Pop 4K", "A Whisker Away 4K", "Lu Over the Wall 4K",
+    "Inu-Oh 4K", "Modest Heroes 4K", "Mary and The Witch's Flower 4K", "Penguin Highway 4K",
+    "Fireworks 4K", "Flavors of Youth 4K", "Hello World 4K", "Promare 4K",
+    "Mekakucity Actors 4K", "Kimi ni Todoke 4K", "Orange 4K", "Anohana 4K",
+    "Clannad 4K", "Angel Beats 4K", "Charlotte 4K", "Plastic Memories 4K",
+    "Your Lie in April 4K", "Hyouka 4K", "Toradora 4K", "Golden Time 4K",
+    "Sakurasou 4K", "Chuunibyou 4K", "K-On 4K", "Haruhi Suzumiya 4K",
+    "Lucky Star 4K", "Nichijou 4K", "Daily Lives of High School Boys 4K",
+    "Gintama 4K", "JoJo's Bizarre Adventure 4K", "Fate/zero 4K", "Fate/stay night UBW 4K",
+    "Fate/Apocrypha 4K", "Fate/Extra 4K", "Demon Slayer Mugen Train 4K", "Demon Slayer Infinity Castle 4K",
+    "Jujutsu Kaisen 0 4K", "Chainsaw Man Movie 4K", "Attack on Titan Final Season 4K",
+    "Attack on Titan The Final Chapters 4K", "One Piece Film Red 4K", "One Piece Film Gold 4K",
+    "One Piece Film Z 4K", "One Piece Strong World 4K", "Dragon Ball Super Broly 4K",
+    "Dragon Ball Super Super Hero 4K", "My Hero Academia Heroes Rising 4K",
+    "My Hero Academia World Heroes Mission 4K", "Black Clover Sword of the Wizard King 4K",
+    "Sword Art Online Ordinal Scale 4K", "Sword Art Online Progressive 4K",
+    "SAO Progressive Scherzo 4K", "The Quintessential Quintuplets Movie 4K",
+    "Fate/stay night Heaven's Feel 4K", "Fate/Grand Order Camelot 4K",
+    "Fate/Grand Order Babylonia 4K", "Fate/Grand Order Solomon 4K",
+    "Evangelion 4K", "End of Evangelion 4K", "Evangelion 3.0+1.0 4K", "Rebuild of Evangelion 4K",
+    "Macross Frontier 4K", "Macross Delta 4K", "Gundam Hathaway 4K", "Gundam NT 4K",
+    "Gundam Unicorn 4K", "Gundam The Origin 4K", "Code Geass Lelouch of the Resurrection 4K",
+    "Code Geass Akito the Exiled 4K", "Legend of the Galactic Heroes 4K",
+    "A Certain Magical Index 4K", "A Certain Scientific Railgun 4K", "Toaru Series 4K",
+    "Monogatari Series 4K", "Bakemonogatari 4K", "Nisemonogatari 4K", "Nekomonogatari 4K",
+    "Owarimonogatari 4K", "Puella Magi Madoka Magica 4K", "Madoka Rebellion 4K",
+    "Steins Gate 4K", "Steins Gate 0 4K", "Re Zero Memory Snow 4K", "Re Zero Frozen Bonds 4K",
+    "Mushoku Tensei 4K", "That Time I Got Reincarnated as a Slime 4K", "Tensura Movie 4K",
+    "No Game No Life Zero 4K", "Overlord Movie 4K", "Konosuba Movie 4K", "Konosuba Legend of Crimson 4K",
+    "The Rising of the Shield Hero 4K", "Shield Hero Season 2 4K", "Shield Hero Season 3 4K",
+    "Dr Stone Ryusui 4K", "Dr Stone New World 4K", "Mob Psycho 100 III 4K",
+    "One Punch Man Season 2 4K", "One Punch Man Season 3 4K", "Tokyo Revengers 4K",
+    "Spy x Family Movie Code White 4K", "Solo Leveling Movie 4K", "Oshi no Ko Movie 4K"
     # 更多可自行补充
 ]
 
@@ -596,7 +859,10 @@ def fetch_all(query):
         scrape_nyaa,
         scrape_dmhy,
         scrape_skrbt,
-        # 可继续添加更多站点函数
+        scrape_torrentgalaxy,
+        scrape_torlock,
+        scrape_glodls,
+        scrape_magnetdl,
     ]
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(scraper_funcs))) as executor:
         future_to_scraper = {executor.submit(func, query): func.__name__ for func in scraper_funcs}
