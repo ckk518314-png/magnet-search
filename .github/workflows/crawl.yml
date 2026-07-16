@@ -1,12 +1,12 @@
-name: 每日爬取磁力资源
+name: 每日爬取并部署磁力资源
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 每天 UTC 0:00 运行
-  workflow_dispatch:       # 支持手动触发
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
-  crawl:
+  crawl-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: 检出代码
@@ -30,3 +30,10 @@ jobs:
           git add data.js
           git diff --staged --quiet || git commit -m "📦 每日自动更新磁力数据 $(date +%Y-%m-%d)"
           git push
+
+      - name: 部署到 Cloudflare Pages
+        run: |
+          npx wrangler pages deploy . --project-name=magnet-search --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
