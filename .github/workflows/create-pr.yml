@@ -1,0 +1,41 @@
+name: Auto-create PR for fix/magnet-data-parse
+
+on:
+  push:
+    branches:
+      - 'fix/magnet-data-parse'
+
+jobs:
+  create_pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const title = "fix: robust parse for data.js in index.html; minify data.js output in crawler.py";
+            const body = `This pull request makes the frontend parsing of data.js more robust and the crawler output more compact:\n\n- Fix: index.html now strips the \`window.MAGNET_DATA\` prefix and trailing semicolon before parsing, and falls back to a cross-line regex if necessary. It also shows clear status messages on parsing failures.\n- Fix: crawler.py now writes \`data.js\` as minified JSON (no pretty indentation) to ensure compatibility with various parsing strategies and reduce file size.\n\nHow to test:\n1. Run the crawler: \`python3 crawler.py\` to regenerate data.js\n2. Serve the repo locally: \`python3 -m http.server 8000\` and open \`http://localhost:8000\`\n3. Confirm the page loads data and displays the number of items.`;
+
+            try {
+              const pr = await github.rest.pulls.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                head: 'fix/magnet-data-parse',
+                base: 'main',
+                body,
+              });
+              core.info(`PR created: ${pr.data.html_url}`);
+            } catch (e) {
+              if (e.status === 422) {
+                core.info('PR may already exist or cannot be created: ' + e.message);
+              } else {
+                throw e;
+              }
+            }
