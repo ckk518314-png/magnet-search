@@ -1,38 +1,49 @@
-name: 每日爬取并部署磁力资源
-
+name: 自动爬取增强部署
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  crawl-and-deploy:
+  crawl-enhance-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 设置 Python
+      - name: 安装 Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.11"
 
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 运行爬虫
+      - name: 执行爬虫
         run: python crawler.py
+
+      - name: 豆瓣增强（海报/简介/评分）
+        run: python enhance.py
 
       - name: 提交 data.js
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git add data.js
-          git diff --staged --quiet || git commit -m "📦 每日自动更新磁力数据 $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "自动更新 data.js [skip ci]"
           git push
+
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: 部署到 Cloudflare Pages
         run: |
+          npm install -g wrangler
           npx wrangler pages deploy . --project-name=magnet-search --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
