@@ -14,12 +14,13 @@ def extract_title(name: str) -> str:
     name = re.sub(r'\.\d{4}\..*$', '', name).strip('.')
     name = name.replace('.', ' ')
     name = re.sub(r'\s+\d{4}$', '', name)
-    name = re.sub(r'\b(2160p|UHD|BluRay|REMUX|HDR|HEVC|H265|x265|H\.?264|x264|10bit|WEB-?DL|DV|DoVi|Atmos|TrueHD|DTS|HD|MA|RERIP|PROPER|REPACK|IMAX|Hybrid|DV\b.*)\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\b(2160p|UHD|BluRay|REMUX|EXTENDED|HDR10\+?|HDR|HEVC|H\.?26[45]|10bit|WEB-?DL|DV|DoVi|Atmos|TrueHD|DTS[- ]?(HD|MA|X)?|RERIP|PROPER|REPACK|IMAX|Hybrid|COMPLETE|AMZN|NF|DSNP|MIXED|Criterion|DDP?\.?\d*\.?\d*)\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\.S\d{2}.*$', '', name)
     name = re.sub(r'\s{2,}', ' ', name)
     return name.strip()
 
-def search_tmdb(title: str, year: str = "") -> int | None:
-    """搜索 TMDB 返回电影 ID"""
+def search_tmdb(title: str) -> tuple[str, int] | None:
+    """搜索 TMDB，返回 (media_type, id) 或 None。media_type 为 'movie' 或 'tv'"""
     url = f"https://www.themoviedb.org/search?query={title}&language=zh-CN"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -27,37 +28,33 @@ def search_tmdb(title: str, year: str = "") -> int | None:
     except:
         return None
 
-    # 找到 movie 区域的链接
-    for a in soup.find_all("a", href=re.compile(r'/movie/\d+')):
-        href = a["href"]
-        m = re.match(r'/movie/(\d+)', href)
-        if not m:
-            continue
-        mid = int(m.group(1))
-        
-        # 检查是否在正确区域（排除 TV/people 等）
-        parent = a.find_parent()
-        for _ in range(5):
-            if parent is None:
-                break
-            # 如果是 card 容器，检查类型
-            cls = parent.get("class", [])
-            if "card" in str(cls).lower():
-                # 确认是 movie 类型
-                result_type = parent.get("data-media-type", "")
-                if result_type == "movie" or not result_type:
-                    return mid
-                break
-            parent = parent.find_parent()
-        
-        # 如果没有 card 容器，直接返回第一个 movie
-        return mid
+    # 按 card 里的 data-media-type 区分，优先 movie
+    for media_type in ["movie", "tv"]:
+        for a in soup.find_all("a", href=re.compile(rf'/{media_type}/\d+')):
+            href = a["href"]
+            m = re.match(rf'/{media_type}/(\d+)', href)
+            if not m:
+                continue
+            mid = int(m.group(1))
+            parent = a.find_parent()
+            for _ in range(5):
+                if parent is None:
+                    break
+                cls = str(parent.get("class", ""))
+                if "card" in cls.lower():
+                    result_type = parent.get("data-media-type", "")
+                    if result_type == media_type or not result_type:
+                        return (media_type, mid)
+                    break
+                parent = parent.find_parent()
+            # 无 card 容器，直接返回第一个匹配
+            return (media_type, mid)
 
     return None
 
-def get_movie_detail(movie_id: int) -> dict | None:
-    """获取 TMDB 影片详情"""
-    url = f"https://www.themoviedb.org/movie/{movie_id}?language=zh-CN"
+def get_detail(media_type: str, media_id: int) -> dict | None:
+    """获取 TMDB 影片/剧集详情"""
+    url = f"https://www.themoviedb.org/{media_type}/{media_id}?language=zh-CN"
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15)
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -66,11 +63,17 @@ def get_movie_detail(movie_id: int) -> dict | None:
 
     info = {}
 
+    # og:title (中文名)
+    og_title = soup.find("meta", property="og:title")
+    if og_title and og_title.get("content"):
+        cn = og_title["content"].strip()
+        cn = re.sub(r'\s*\(\d{4}\)\s*$', '', cn)
+        info["title_cn"] = cn
+
     # og:image (海报)
     og_img = soup.find("meta", property="og:image")
     if og_img and og_img.get("content"):
         poster = og_img["content"]
-        # 升级到高质量
         poster = poster.replace("/w500/", "/w780/")
         info["poster"] = poster
 
@@ -79,7 +82,7 @@ def get_movie_detail(movie_id: int) -> dict | None:
     if rating_el:
         pct = rating_el.get("data-percent", "")
         if pct:
-            info["rating"] = str(int(pct) / 10)  # 78% -> 7.8
+            info["rating"] = str(int(pct) / 10)
 
     # 类型
     genres = []
@@ -95,7 +98,7 @@ def get_movie_detail(movie_id: int) -> dict | None:
         if p:
             info["overview"] = p.get_text(strip=True)
 
-    # 上映日期
+    # 日期
     date_el = soup.find("span", class_="release_date")
     if date_el:
         txt = date_el.get_text(strip=True)
@@ -120,29 +123,33 @@ def main(data_file: str, output_file: str):
         name = item.get("name", "")
         title = extract_title(name)
         
-        # 提取年份
-        year_match = re.search(r'\.(\d{4})\.', name)
-        year = year_match.group(1) if year_match else ""
-        
         print(f"[{idx+1}/{len(waiting)}] {title[:45]} ... ", end="", flush=True)
 
-        movie_id = search_tmdb(title, year)
-        if not movie_id:
+        result = search_tmdb(title)
+        if not result:
             print("❌ 未找到")
             time.sleep(1 + random.random())
             continue
 
+        media_type, media_id = result
         time.sleep(0.8 + random.random() * 0.5)
-        detail = get_movie_detail(movie_id)
+        detail = get_detail(media_type, media_id)
 
-        if detail and detail.get("poster"):
-            item["poster"] = detail.get("poster", "")
-            item["rating"] = detail.get("rating", "")
-            item["genres"] = detail.get("genres", [])
-            item["overview"] = detail.get("overview", "")
-            item["year"] = detail.get("year", year)
-            enhanced += 1
-            print(f"✅ {detail.get('rating','?')}")
+        if detail:
+            if detail.get("poster"):
+                item["poster"] = detail["poster"]
+                enhanced += 1
+            if detail.get("title_cn"):
+                item["title_cn"] = detail["title_cn"]
+            if detail.get("rating"):
+                item["rating"] = detail["rating"]
+            if detail.get("genres"):
+                item["genres"] = detail["genres"]
+            if detail.get("overview"):
+                item["overview"] = detail["overview"]
+            if detail.get("year"):
+                item["year"] = detail["year"]
+            print(f"✅ {detail.get('rating','?')} [{media_type}]")
         else:
             print("❌ 无详情")
 
