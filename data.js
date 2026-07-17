@@ -2332,7 +2332,14 @@ window.MAGNET_DATA = [
     "size": "4.8 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:e91dd376e6bdcf296b3f2b0ce959cb9b7ced9716&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:e91dd376e6bdcf296b3f2b0ce959cb9b7ced9716&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/pafbo1ZxG4z44kuoCc2QL5wRuMQ.jpg",
+    "rating": "8.6",
+    "genres": [
+      "动画",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "761a42e0496d8b2f745f57c7a4d66ba46248d22e",
@@ -2340,7 +2347,15 @@ window.MAGNET_DATA = [
     "size": "12.5 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:761a42e0496d8b2f745f57c7a4d66ba46248d22e&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:761a42e0496d8b2f745f57c7a4d66ba46248d22e&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/fHO4ssyUOO1FTJmy7Q3ofbCE8XS.jpg",
+    "rating": "8.4",
+    "genres": [
+      "动画",
+      "喜剧",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "38cdae4f6ca9a98a1a39db7d68ee68570b03fd25",
@@ -2348,7 +2363,15 @@ window.MAGNET_DATA = [
     "size": "14.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:38cdae4f6ca9a98a1a39db7d68ee68570b03fd25&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:38cdae4f6ca9a98a1a39db7d68ee68570b03fd25&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/Ac3y0rLjPIQAhyg5ie68SQogXOb.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "喜剧",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "990c52c272c272782bc17fbca69304dac3862de5",
@@ -2356,7 +2379,15 @@ window.MAGNET_DATA = [
     "size": "12.4 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:990c52c272c272782bc17fbca69304dac3862de5&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:990c52c272c272782bc17fbca69304dac3862de5&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/9cP7wbBiD99Neu0d1Zae3ZONTjB.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "War & Politics",
+      "动作冒险",
+      "剧情"
+    ]
   },
   {
     "hash": "a639f22938790198e2058793a2bb6d76f2c06a23",
@@ -2364,7 +2395,15 @@ window.MAGNET_DATA = [
     "size": "8.5 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:a639f22938790198e2058793a2bb6d76f2c06a23&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:a639f22938790198e2058793a2bb6d76f2c06a23&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/mvsqo90yoawfkPvibQXkXeWEEoz.jpg",
+    "rating": "8.3",
+    "genres": [
+      "动画",
+      "剧情",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "227372f76d5e23b480144e3d69901e56a9d6e69b",
@@ -2372,7 +2411,15 @@ window.MAGNET_DATA = [
     "size": "8.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:227372f76d5e23b480144e3d69901e56a9d6e69b&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:227372f76d5e23b480144e3d69901e56a9d6e69b&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/7ePXcnWPwyaGF5VQzTPihScJmq0.jpg",
+    "rating": "8.3",
+    "genres": [
+      "动画",
+      "剧情",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "28bb527b65f9e1f626b31d972b450c81e0e12cb9",
@@ -2380,7 +2427,14 @@ window.MAGNET_DATA = [
     "size": "14.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:28bb527b65f9e1f626b31d972b450c81e0e12cb9&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:28bb527b65f9e1f626b31d972b450c81e0e12cb9&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/hVUr9mlheYLTBsXMohGUHhdgzht.jpg",
+    "rating": "8.3",
+    "genres": [
+      "动画",
+      "剧情",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "efe7e4b6747cd3f1de534e4176c5641d4600d079",
@@ -2388,7 +2442,16 @@ window.MAGNET_DATA = [
     "size": "16.4 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:efe7e4b6747cd3f1de534e4176c5641d4600d079&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:efe7e4b6747cd3f1de534e4176c5641d4600d079&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/zTAJk1ERMticlZeXaKTq6UozgxC.jpg",
+    "rating": "8.0",
+    "genres": [
+      "动画",
+      "剧情",
+      "悬疑",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "ea82a8d8bcd3d512b0a3dc518f14b869290c5ac5",
@@ -2396,7 +2459,14 @@ window.MAGNET_DATA = [
     "size": "12.1 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:ea82a8d8bcd3d512b0a3dc518f14b869290c5ac5&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:ea82a8d8bcd3d512b0a3dc518f14b869290c5ac5&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/sj5W3bJ5oS6qdf7a7es1RPnJxQO.jpg",
+    "rating": "7.4",
+    "genres": [
+      "动画",
+      "喜剧",
+      "动作冒险"
+    ]
   },
   {
     "hash": "a5d43e465dd31488d4add69239d86fcab8f306a1",
@@ -2404,7 +2474,14 @@ window.MAGNET_DATA = [
     "size": "18.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:a5d43e465dd31488d4add69239d86fcab8f306a1&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:a5d43e465dd31488d4add69239d86fcab8f306a1&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/K8ZUjxaj9F0t3AwJDz8ypzBynM.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ]
   },
   {
     "hash": "a901984e7d93440a9d55d04a8060533f53af9c3a",
