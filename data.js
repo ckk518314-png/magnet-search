@@ -20,7 +20,8 @@ window.MAGNET_DATA = [
       "伊丽莎白·德比齐",
       "肯尼思·布拉纳",
       "亚伦·泰勒-约翰逊"
-    ]
+    ],
+    "title_cn": "信条"
   },
   {
     "hash": "5d0cdf440f5ee3230c00cef7501f13ff0f9d6cd0",
@@ -42,7 +43,8 @@ window.MAGNET_DATA = [
       "肖恩·杨",
       "爱德华·詹姆斯·奥莫斯",
       "M·埃梅特·沃尔什"
-    ]
+    ],
+    "title_cn": "银翼杀手"
   },
   {
     "hash": "6afe327ced328a0f462e46c79604a1a3b8a797da",
@@ -57,7 +59,8 @@ window.MAGNET_DATA = [
       "科幻",
       "冒险",
       "战争"
-    ]
+    ],
+    "title_cn": "沙丘"
   },
   {
     "hash": "23f27db3d11a83abf3aa35867268724201e24d0d",
@@ -72,7 +75,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "科幻"
-    ]
+    ],
+    "title_cn": "疯狂的麦克斯4：狂暴之路"
   },
   {
     "hash": "0d17b2d1c7e8da8149ec5acfa5a88c0cb8202f1e",
@@ -95,7 +99,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "犯罪",
       "喜剧"
-    ]
+    ],
+    "title_cn": "低俗小说"
   },
   {
     "hash": "56bc935f428c6fc0540df644ecb842d88381f39a",
@@ -109,7 +114,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "惊悚"
-    ]
+    ],
+    "title_cn": "搏击俱乐部"
   },
   {
     "hash": "9ccdb7ffc67a029533cd0d6ec6bce0b17d129146",
@@ -134,7 +140,8 @@ window.MAGNET_DATA = [
       "艾伦·艾克哈特",
       "迈克尔·凯恩",
       "玛吉·吉伦哈尔"
-    ]
+    ],
+    "title_cn": "蝙蝠侠：黑暗骑士"
   },
   {
     "hash": "d9531135e2a1e425fb3fbdb469293c450d5956ae",
@@ -155,7 +162,8 @@ window.MAGNET_DATA = [
       "赵汝贞",
       "崔宇植",
       "朴素丹"
-    ]
+    ],
+    "title_cn": "寄生虫"
   },
   {
     "hash": "7b9ae08d49070c933dfdbbd80d9a7b65558a151d",
@@ -170,7 +178,8 @@ window.MAGNET_DATA = [
       "犯罪",
       "惊悚",
       "剧情"
-    ]
+    ],
+    "title_cn": "小丑"
   },
   {
     "hash": "e265c7daf0db098048de5f0d9814642332d332d2",
@@ -185,7 +194,8 @@ window.MAGNET_DATA = [
       "战争",
       "历史",
       "剧情"
-    ]
+    ],
+    "title_cn": "1917"
   },
   {
     "hash": "08d5634d81b290b1c9c59db3dd02992010ce6051",
@@ -200,7 +210,8 @@ window.MAGNET_DATA = [
       "剧情",
       "音乐",
       "惊悚"
-    ]
+    ],
+    "title_cn": "爆裂鼓手"
   },
   {
     "hash": "6458c98dd350f1feac823e5d65ae9d242faa3371",
@@ -215,7 +226,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "剧情",
       "爱情"
-    ]
+    ],
+    "title_cn": "爱乐之城"
   },
   {
     "hash": "af3c2daa962e2e06f3c3ab437c63a44560c41f27",
@@ -229,7 +241,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "犯罪"
-    ]
+    ],
+    "title_cn": "肖申克的救赎"
   },
   {
     "hash": "395bdfaf0830266d65f9ba9bda2da2ca3f5fe642",
@@ -244,7 +257,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "剧情",
       "爱情"
-    ]
+    ],
+    "title_cn": "阿甘正传"
   },
   {
     "hash": "370f8744077027db0c6253f88fbe6302f950619a",
@@ -258,7 +272,8 @@ window.MAGNET_DATA = [
     "genres": [
       "动作",
       "科幻"
-    ]
+    ],
+    "title_cn": "黑客帝国"
   },
   {
     "hash": "e2f73cb6c27cab95494b72ee07dac9b438dd2671",
@@ -273,7 +288,8 @@ window.MAGNET_DATA = [
       "动作",
       "剧情",
       "冒险"
-    ]
+    ],
+    "title_cn": "角斗士"
   },
   {
     "hash": "1b7e49efac9c8c32b44f8bdb872d159bc76953dc",
@@ -288,7 +304,8 @@ window.MAGNET_DATA = [
       "战争",
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "拯救大兵瑞恩"
   },
   {
     "hash": "c1668f19dbd75dac49f666bad29c481d1d4056bd",
@@ -303,7 +320,8 @@ window.MAGNET_DATA = [
       "剧情",
       "历史",
       "战争"
-    ]
+    ],
+    "title_cn": "辛德勒的名单"
   },
   {
     "hash": "ae1a39b08630edfd39452485d8f76d6450e7d3ac",
@@ -318,7 +336,8 @@ window.MAGNET_DATA = [
       "动画",
       "家庭",
       "剧情"
-    ]
+    ],
+    "title_cn": "狮子王"
   },
   {
     "hash": "d3fb9eecbc3e345a50e075d61af8c28ebe512dcd",
@@ -333,7 +352,8 @@ window.MAGNET_DATA = [
       "动画",
       "家庭",
       "奇幻"
-    ]
+    ],
+    "title_cn": "千与千寻"
   },
   {
     "hash": "68e64b323bb5e2e29c3d67ba740a7da49c71c0c2",
@@ -348,7 +368,8 @@ window.MAGNET_DATA = [
       "冒险",
       "奇幻",
       "动画"
-    ]
+    ],
+    "title_cn": "幽灵公主"
   },
   {
     "hash": "b6175fba69c709301da726f00b84ac410ea3ab5a",
@@ -363,7 +384,8 @@ window.MAGNET_DATA = [
       "动画",
       "爱情",
       "剧情"
-    ]
+    ],
+    "title_cn": "你的名字。"
   },
   {
     "hash": "33372745c8ed1bc80cf645e033dadf55443e5a3d",
@@ -379,7 +401,8 @@ window.MAGNET_DATA = [
       "剧情",
       "冒险",
       "奇幻"
-    ]
+    ],
+    "title_cn": "铃芽之旅"
   },
   {
     "hash": "76894336fcc4ed2c748184feda998ce6be8935a8",
@@ -395,7 +418,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "科幻"
-    ]
+    ],
+    "title_cn": "蜘蛛侠：平行宇宙"
   },
   {
     "hash": "230c8fa041c8a95c55b4e7813d4288e3785a77bf",
@@ -421,7 +445,8 @@ window.MAGNET_DATA = [
       "奥斯卡·伊萨克",
       "杰克·约翰逊",
       "伊萨·雷"
-    ]
+    ],
+    "title_cn": "蜘蛛侠：纵横宇宙"
   },
   {
     "hash": "65c9bfb925762d4bb10be9b69a9c34e0ffbfa8e7",
@@ -445,7 +470,8 @@ window.MAGNET_DATA = [
       "保罗·达诺",
       "科林·法瑞尔",
       "杰弗里·怀特"
-    ]
+    ],
+    "title_cn": "新蝙蝠侠"
   },
   {
     "hash": "10b368651478f2e6f9d03c81ae7dd3bc16405ffb",
@@ -460,7 +486,8 @@ window.MAGNET_DATA = [
       "科幻",
       "冒险",
       "动作"
-    ]
+    ],
+    "title_cn": "银河护卫队3"
   },
   {
     "hash": "ae2b771bd82f84175b3448be616a5f4db6225a0c",
@@ -475,7 +502,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "科幻"
-    ]
+    ],
+    "title_cn": "黑豹2"
   },
   {
     "hash": "196a8890cfae3f659b6be9bd59e9a29464f84b17",
@@ -490,7 +518,8 @@ window.MAGNET_DATA = [
       "奇幻",
       "动作",
       "喜剧"
-    ]
+    ],
+    "title_cn": "雷神4：爱与雷霆"
   },
   {
     "hash": "1bc7cde9cd600555c9b957d7acc44df5e13126b9",
@@ -505,7 +534,8 @@ window.MAGNET_DATA = [
       "奇幻",
       "动作",
       "冒险"
-    ]
+    ],
+    "title_cn": "奇异博士2：疯狂多元宇宙"
   },
   {
     "hash": "ef29b6b3a9fa591b97a4c15285198a47d80793e2",
@@ -529,7 +559,8 @@ window.MAGNET_DATA = [
       "安吉丽娜·朱莉",
       "萨尔玛·海耶克",
       "基特·哈灵顿"
-    ]
+    ],
+    "title_cn": "永恒族"
   },
   {
     "hash": "d8bfa7d2badc300f82b7fd55a7a2362abbc3ce09",
@@ -544,7 +575,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "奇幻"
-    ]
+    ],
+    "title_cn": "尚气与十环传奇"
   },
   {
     "hash": "6d0011795fb3948e58d7188cc71529eb0ee856bf",
@@ -559,7 +591,8 @@ window.MAGNET_DATA = [
       "动作",
       "惊悚",
       "冒险"
-    ]
+    ],
+    "title_cn": "007：无暇赴死"
   },
   {
     "hash": "b3a5b17326329f07f2f4500c62ffa699bc6ed7ee",
@@ -583,7 +616,8 @@ window.MAGNET_DATA = [
       "丽贝卡·弗格森",
       "哈维尔·巴登",
       "乔什·布洛林"
-    ]
+    ],
+    "title_cn": "沙丘2"
   },
   {
     "hash": "622b8637cbfc62f7e7e904c7e7f2b6d91c677346",
@@ -609,7 +643,8 @@ window.MAGNET_DATA = [
       "莉莉·格莱斯顿",
       "杰西·普莱蒙",
       "坦图·卡丁诺"
-    ]
+    ],
+    "title_cn": "花月杀手"
   },
   {
     "hash": "9b923e68b933377d3d38ccb06318675abdc3f682",
@@ -626,7 +661,8 @@ window.MAGNET_DATA = [
       "爱情",
       "动作",
       "剧情"
-    ]
+    ],
+    "title_cn": "拿破仑战争"
   },
   {
     "hash": "dd5a66b0d942da41ec59fc0dcbd7c3bd32737a92",
@@ -641,7 +677,8 @@ window.MAGNET_DATA = [
       "动作",
       "科幻",
       "冒险"
-    ]
+    ],
+    "title_cn": "闪电侠"
   },
   {
     "hash": "e4402f3f79a8bfa24d1a7f56c14a119c5caae77b",
@@ -656,7 +693,8 @@ window.MAGNET_DATA = [
       "动作",
       "科幻",
       "冒险"
-    ]
+    ],
+    "title_cn": "蓝甲虫"
   },
   {
     "hash": "6d68188ead7ac33db4115c43e3470880374950fc",
@@ -671,7 +709,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "奇幻"
-    ]
+    ],
+    "title_cn": "海王2：失落的王国"
   },
   {
     "hash": "70d243141b70d2f4d938253d3d86910b5fc7f0a9",
@@ -686,7 +725,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "家庭",
       "奇幻"
-    ]
+    ],
+    "title_cn": "旺卡"
   },
   {
     "hash": "a20d498890586a67d4f7350bc2ea4d962d45caa5",
@@ -701,7 +741,8 @@ window.MAGNET_DATA = [
       "科幻",
       "冒险",
       "动作"
-    ]
+    ],
+    "title_cn": "惊奇队长2"
   },
   {
     "hash": "142aee01091e9b7dd6178db46b8638e664ec7d82",
@@ -717,7 +758,8 @@ window.MAGNET_DATA = [
       "家庭",
       "奇幻",
       "冒险"
-    ]
+    ],
+    "title_cn": "星愿"
   },
   {
     "hash": "58a8707142be91d9745e673dc7cb9133bf76cdfa",
@@ -732,7 +774,8 @@ window.MAGNET_DATA = [
       "科幻",
       "爱情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "可怜的东西"
   },
   {
     "hash": "6521d914438aaa0b21aa7d2f5a44d231cec5a2f5",
@@ -746,7 +789,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "爱情"
-    ]
+    ],
+    "title_cn": "过往人生"
   },
   {
     "hash": "cf9e5deceeb0a9c253520957c953ab4e5865b2b3",
@@ -761,7 +805,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "悬疑",
       "犯罪"
-    ]
+    ],
+    "title_cn": "坠落的审判"
   },
   {
     "hash": "eafe3b3f264ea08a896646bcac1f3064bb6a7dd4",
@@ -775,7 +820,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "留校联盟"
   },
   {
     "hash": "0c900f1baecb7b915b9d2a709c35f477428a1ad3",
@@ -789,7 +835,8 @@ window.MAGNET_DATA = [
     "genres": [
       "喜剧",
       "剧情"
-    ]
+    ],
+    "title_cn": "美国小说"
   },
   {
     "hash": "b21b681f18b4a6007984f6c5c313f301041da002",
@@ -804,7 +851,8 @@ window.MAGNET_DATA = [
       "剧情",
       "爱情",
       "音乐"
-    ]
+    ],
+    "title_cn": "蓝色音乐节"
   },
   {
     "hash": "26f97e61ede23e968c54609cbd72869673974ab1",
@@ -819,7 +867,8 @@ window.MAGNET_DATA = [
       "犯罪",
       "历史",
       "剧情"
-    ]
+    ],
+    "title_cn": "花月杀手"
   },
   {
     "hash": "d01636b810d08dbc1ad6bb761e0296925ac6d38b",
@@ -833,7 +882,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "绝境盟约"
   },
   {
     "hash": "8f0be9795dd68619c4deb8b08f0ace7574c143cc",
@@ -848,7 +898,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "科幻"
-    ]
+    ],
+    "title_cn": "瞬息全宇宙"
   },
   {
     "hash": "075b71540c5ebaf4fcef7eb3cb565ae357226b13",
@@ -862,7 +913,8 @@ window.MAGNET_DATA = [
     "genres": [
       "动作",
       "剧情"
-    ]
+    ],
+    "title_cn": "Top Gun: Maverick"
   },
   {
     "hash": "f01b22e528b713dd5f686e57d6a6b1b01efaf038",
@@ -877,7 +929,8 @@ window.MAGNET_DATA = [
       "犯罪",
       "悬疑",
       "惊悚"
-    ]
+    ],
+    "title_cn": "新蝙蝠侠"
   },
   {
     "hash": "600b64ff604b38e0e1fa889f5310898aeaed8c03",
@@ -901,7 +954,8 @@ window.MAGNET_DATA = [
       "布兰登·佩利亚",
       "迈克尔·维克特",
       "史蒂文·元"
-    ]
+    ],
+    "title_cn": "不"
   },
   {
     "hash": "254a332d5f3d68a91963212204013de406715eef",
@@ -915,7 +969,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "伊尼舍林的报丧女妖"
   },
   {
     "hash": "58d1791e65e84342e21b10a217e674878045d7d6",
@@ -928,7 +983,8 @@ window.MAGNET_DATA = [
     "rating": "7.6",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "造梦之家"
   },
   {
     "hash": "03c22a3eb9b59712ae76db456c749277d5444cf4",
@@ -942,7 +998,8 @@ window.MAGNET_DATA = [
     "genres": [
       "音乐",
       "剧情"
-    ]
+    ],
+    "title_cn": "塔尔"
   },
   {
     "hash": "eb55fd430e23c160b3cb086c4e11332a2b7c53b0",
@@ -956,7 +1013,8 @@ window.MAGNET_DATA = [
     "genres": [
       "喜剧",
       "剧情"
-    ]
+    ],
+    "title_cn": "悲情三角"
   },
   {
     "hash": "ae72a9320b623ffdd1ef64291b33afbf781836af",
@@ -971,7 +1029,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "犯罪",
       "悬疑"
-    ]
+    ],
+    "title_cn": "利刃出鞘2：抽丝剥茧"
   },
   {
     "hash": "0c4f7cec923e3f1763924cae0175e16a23d2847b",
@@ -984,7 +1043,8 @@ window.MAGNET_DATA = [
     "rating": "7.8",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "鲸"
   },
   {
     "hash": "a696e218f44f6bcf1df2ac6c62139cc18e238971",
@@ -997,7 +1057,8 @@ window.MAGNET_DATA = [
     "rating": "6.8",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "女人们的谈话"
   },
   {
     "hash": "1b352522063ffd60b1d47dd1d5c144babc9f4b00",
@@ -1020,7 +1081,8 @@ window.MAGNET_DATA = [
       "亚伦·希尔默",
       "丹尼尔·布鲁赫",
       "塞巴斯蒂安·胡克"
-    ]
+    ],
+    "title_cn": "西线无战事"
   },
   {
     "hash": "49e07a4a98e10f65c6621d65745a107cc5e7e15c",
@@ -1042,7 +1104,8 @@ window.MAGNET_DATA = [
       "凯瑞·康顿",
       "巴里·基奥恩",
       "盖瑞·莱登"
-    ]
+    ],
+    "title_cn": "伊尼舍林的报丧女妖"
   },
   {
     "hash": "a92c0d94849f3de814fa8afe25bbc8bc017cb504",
@@ -1057,7 +1120,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "悬疑",
       "爱情"
-    ]
+    ],
+    "title_cn": "分手的决心"
   },
   {
     "hash": "e7df9b8b0f58993c34aef62e9341b2368a383dfe",
@@ -1078,7 +1142,8 @@ window.MAGNET_DATA = [
       "雾岛丽香",
       "冈田将生",
       "朴有琳"
-    ]
+    ],
+    "title_cn": "驾驶我的车"
   },
   {
     "hash": "7cf78b68ab58aa28b025cd7d9e352e8d0c6986d4",
@@ -1093,7 +1158,8 @@ window.MAGNET_DATA = [
       "剧情",
       "音乐",
       "爱情"
-    ]
+    ],
+    "title_cn": "健听女孩"
   },
   {
     "hash": "05927ce341e6352cb244a248dc998c03819c7940",
@@ -1108,7 +1174,8 @@ window.MAGNET_DATA = [
       "科幻",
       "冒险",
       "战争"
-    ]
+    ],
+    "title_cn": "沙丘"
   },
   {
     "hash": "5c6676d89e9ee9bc391e16db131bedb39aed9142",
@@ -1130,7 +1197,8 @@ window.MAGNET_DATA = [
       "斯凯勒·吉桑多",
       "玛丽·伊丽莎白·埃利斯",
       "约翰·迈克尔·辛吉斯"
-    ]
+    ],
+    "title_cn": "甘草披萨"
   },
   {
     "hash": "a639cf12d25dd046de5e909211029bcf5ecaf897",
@@ -1144,7 +1212,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "西部"
-    ]
+    ],
+    "title_cn": "犬之力"
   },
   {
     "hash": "27db467f6bbcbb37ccc62d73c4fa010c70f44b97",
@@ -1159,7 +1228,8 @@ window.MAGNET_DATA = [
       "剧情",
       "爱情",
       "犯罪"
-    ]
+    ],
+    "title_cn": "西区故事"
   },
   {
     "hash": "d8b63ccfac4021c5050125814a89f285ac3e4c18",
@@ -1173,7 +1243,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "国王理查德"
   },
   {
     "hash": "3f9ccac9457eed1856eb8b97e869b390449f99ad",
@@ -1187,7 +1258,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "贝尔法斯特"
   },
   {
     "hash": "fcd21d80002f794aea6f2f75b595554e68174d7c",
@@ -1201,7 +1273,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "里卡多一家"
   },
   {
     "hash": "23096de85f84ab93bce451e142d7f796b775bcef",
@@ -1215,7 +1288,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "音乐"
-    ]
+    ],
+    "title_cn": "倒数时刻"
   },
   {
     "hash": "981cb5d7c348a3b61a23283ac2e65aaa8d0cab3c",
@@ -1228,7 +1302,8 @@ window.MAGNET_DATA = [
     "rating": "6.5",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "暗处的女儿"
   },
   {
     "hash": "86909b3388b776f51d1ff5de72d284e53ae71902",
@@ -1241,7 +1316,8 @@ window.MAGNET_DATA = [
     "rating": "6.7",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "斯宾塞"
   },
   {
     "hash": "a5998e26068c9073942a689b591ad0e980ddd9a2",
@@ -1256,7 +1332,8 @@ window.MAGNET_DATA = [
       "剧情",
       "犯罪",
       "历史"
-    ]
+    ],
+    "title_cn": "古驰家族"
   },
   {
     "hash": "c9cc0a564688c737812909f97cbeab544945d07e",
@@ -1270,7 +1347,8 @@ window.MAGNET_DATA = [
     "genres": [
       "恐怖",
       "悬疑"
-    ]
+    ],
+    "title_cn": "Soho区惊魂夜"
   },
   {
     "hash": "780bb4631c69f3185e8585d1257c2e14e3e44764",
@@ -1285,7 +1363,8 @@ window.MAGNET_DATA = [
       "动作",
       "惊悚",
       "冒险"
-    ]
+    ],
+    "title_cn": "007：无暇赴死"
   },
   {
     "hash": "e088464606e90e3e18f037706f436f031c609b8a",
@@ -1298,7 +1377,8 @@ window.MAGNET_DATA = [
     "rating": "6.4",
     "genres": [
       "恐怖"
-    ]
+    ],
+    "title_cn": "月光光心慌慌：杀戮"
   },
   {
     "hash": "22532127f147cac5e9b04ca06911e3f9743b3f37",
@@ -1313,7 +1393,8 @@ window.MAGNET_DATA = [
       "科幻",
       "惊悚",
       "恐怖"
-    ]
+    ],
+    "title_cn": "寂静之地2"
   },
   {
     "hash": "81db196d2910c645d8d0e6cb31cbcd0451f8b642",
@@ -1328,7 +1409,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "黑白魔女库伊拉"
   },
   {
     "hash": "eea9119332c5328857f164c411e433c3e56e9b46",
@@ -1345,7 +1427,8 @@ window.MAGNET_DATA = [
       "冒险",
       "奇幻",
       "家庭"
-    ]
+    ],
+    "title_cn": "寻龙传说"
   },
   {
     "hash": "0a02928246e236b465e7125062a918dd520fabc3",
@@ -1360,7 +1443,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "科幻"
-    ]
+    ],
+    "title_cn": "Black Widow"
   },
   {
     "hash": "d16fed81cc6d3825df101cfc9e1e43b4c83be611",
@@ -1375,7 +1459,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "犯罪"
-    ]
+    ],
+    "title_cn": "速度与激情9"
   },
   {
     "hash": "16df2a6f2d4b1ba38c1edab88400369880ca6cbe",
@@ -1389,7 +1474,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "爱情"
-    ]
+    ],
+    "title_cn": "身在高地"
   },
   {
     "hash": "c93ec372fad2337fe9aabf196b2917e6480d4958",
@@ -1404,7 +1490,8 @@ window.MAGNET_DATA = [
       "动画",
       "冒险",
       "喜剧"
-    ]
+    ],
+    "title_cn": "智能大反攻"
   },
   {
     "hash": "36c6afeebd6f2fbcfb5d9c1189629e69c8dad2d1",
@@ -1419,7 +1506,8 @@ window.MAGNET_DATA = [
       "犯罪",
       "动作",
       "恐怖"
-    ]
+    ],
+    "title_cn": "活死人军团"
   },
   {
     "hash": "069eaba621c21207263d6df40ea8eb3ebb665225",
@@ -1433,7 +1521,8 @@ window.MAGNET_DATA = [
     "genres": [
       "惊悚",
       "动作"
-    ]
+    ],
+    "title_cn": "那些希望我死的人"
   },
   {
     "hash": "edb82654cc2ffc30e3806b022c855483960c5314",
@@ -1448,7 +1537,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "人之怒"
   },
   {
     "hash": "6c2e0875b846d25b4269b9d8353e73cb21fe21c1",
@@ -1462,7 +1552,8 @@ window.MAGNET_DATA = [
     "genres": [
       "恐怖",
       "悬疑"
-    ]
+    ],
+    "title_cn": "电锯惊魂9：漩涡"
   },
   {
     "hash": "b8cc624f119497552df1d77ae71ce34f3b81f723",
@@ -1477,7 +1568,8 @@ window.MAGNET_DATA = [
       "动作",
       "奇幻",
       "冒险"
-    ]
+    ],
+    "title_cn": "真人快打2"
   },
   {
     "hash": "f82308ecd6dd30fa10dd3b20d03902b1d23d7dc5",
@@ -1492,7 +1584,8 @@ window.MAGNET_DATA = [
       "动作",
       "科幻",
       "冒险"
-    ]
+    ],
+    "title_cn": "哥斯拉大战金刚"
   },
   {
     "hash": "a3da6740cd26563614282d6c974631c3042f373b",
@@ -1507,7 +1600,8 @@ window.MAGNET_DATA = [
       "动作",
       "冒险",
       "奇幻"
-    ]
+    ],
+    "title_cn": "扎克·施奈德版正义联盟"
   },
   {
     "hash": "df22c774e254a42a9f40c1f9b5f5f2e47a84817f",
@@ -1522,7 +1616,8 @@ window.MAGNET_DATA = [
       "动作",
       "惊悚",
       "战争"
-    ]
+    ],
+    "title_cn": "冷血悍将"
   },
   {
     "hash": "8c43bc8e06d8155c62f4d16c7f7be1cb15efaa23",
@@ -1535,7 +1630,8 @@ window.MAGNET_DATA = [
     "rating": "8.0",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "巴黎在燃烧"
   },
   {
     "hash": "3e918f9b85d46c1211c32e0a2ab5f52ac868d7d0",
@@ -1548,7 +1644,8 @@ window.MAGNET_DATA = [
     "rating": "7.2",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "无依之地"
   },
   {
     "hash": "0a5e7fdde9dd067a47ed7f810b4cd60ae69a0aca",
@@ -1563,7 +1660,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "前程似锦的女孩"
   },
   {
     "hash": "b33906e23df917ab10ebe20b8a8f4714e12ab9db",
@@ -1577,7 +1675,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "历史"
-    ]
+    ],
+    "title_cn": "犹大与黑弥赛亚"
   },
   {
     "hash": "5c707eeab95de2d9731705df937dcefb94cd735c",
@@ -1591,7 +1690,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "音乐"
-    ]
+    ],
+    "title_cn": "金属之声"
   },
   {
     "hash": "98dc67634eecc48974245eddee12d7db6cf0ca59",
@@ -1605,7 +1705,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "犯罪"
-    ]
+    ],
+    "title_cn": "绝命毒师"
   },
   {
     "hash": "f144664007fc564c4d72340dda5fd5ca47977a55",
@@ -1619,7 +1720,8 @@ window.MAGNET_DATA = [
     "genres": [
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "风骚律师"
   },
   {
     "hash": "377c9c7bd0282b6f97211db3fe93c4f9b402b9dc",
@@ -1634,7 +1736,8 @@ window.MAGNET_DATA = [
       "Sci-Fi & Fantasy",
       "剧情",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "权力的游戏"
   },
   {
     "hash": "af9ad3058fac660396710df8198814c35de3c5ea",
@@ -1648,7 +1751,8 @@ window.MAGNET_DATA = [
     "genres": [
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "黑道家族"
   },
   {
     "hash": "f0408048ad86c35ac5f1dda02131d9a27ac6ebf5",
@@ -1662,7 +1766,8 @@ window.MAGNET_DATA = [
     "genres": [
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "火线"
   },
   {
     "hash": "f8089be75dd9b8c1bad550b69e2a0de05e240fb2",
@@ -1675,7 +1780,8 @@ window.MAGNET_DATA = [
     "rating": "8.1",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "广告狂人"
   },
   {
     "hash": "670edfc3418e404e3e1c23f46e68f8c5137a6f64",
@@ -1690,7 +1796,8 @@ window.MAGNET_DATA = [
       "犯罪",
       "剧情",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "盾牌"
   },
   {
     "hash": "9a22226e8d48449120b32d861c59186fa9c8fed1",
@@ -1703,7 +1810,8 @@ window.MAGNET_DATA = [
     "rating": "8.1",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "六尺之下"
   },
   {
     "hash": "693a0e14eefb0232cc3964a35b17a446806f0de9",
@@ -1718,7 +1826,8 @@ window.MAGNET_DATA = [
       "悬疑",
       "动作冒险",
       "剧情"
-    ]
+    ],
+    "title_cn": "迷失"
   },
   {
     "hash": "3ca82205bb3f368e84817abb67888a39694b33d7",
@@ -1733,7 +1842,8 @@ window.MAGNET_DATA = [
       "惊悚",
       "剧情",
       "犯罪"
-    ]
+    ],
+    "title_cn": "美国谍梦"
   },
   {
     "hash": "fccda99ba34e8cc0ffd4d3befd9908aed435880d",
@@ -1748,7 +1858,8 @@ window.MAGNET_DATA = [
       "剧情",
       "War & Politics",
       "犯罪"
-    ]
+    ],
+    "title_cn": "国土安全"
   },
   {
     "hash": "a954465bfd5a402183708566ba9fa88733792f57",
@@ -1776,7 +1887,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "悬疑",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "怪奇物语"
   },
   {
     "hash": "6b196ee0bd6b9961915c01d1c672dae4e111cdd3",
@@ -1846,7 +1958,8 @@ window.MAGNET_DATA = [
     "genres": [
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "曼达洛人"
   },
   {
     "hash": "1b0c3e8cefc440b5e680157d8cda33ae6b5e60e9",
@@ -1917,7 +2030,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "熊家餐馆"
   },
   {
     "hash": "95e81f06889f248b141bd5bf6851ff0437e5ddaa",
@@ -1932,7 +2046,8 @@ window.MAGNET_DATA = [
       "Sci-Fi & Fantasy",
       "悬疑",
       "喜剧"
-    ]
+    ],
+    "title_cn": "Wednesday"
   },
   {
     "hash": "de9c59547267841a4be8a17d4e8b3f47220cc0f9",
@@ -1945,7 +2060,8 @@ window.MAGNET_DATA = [
     "rating": "7.7",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "The Morning Show"
   },
   {
     "hash": "ec1d1e61ef59014ca6ef290aa4c492cf991f89c3",
@@ -1959,7 +2075,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "Ted Lasso"
   },
   {
     "hash": "59e013cec85d1d8196f03429f702f4284c8b162f",
@@ -1973,7 +2090,8 @@ window.MAGNET_DATA = [
     "genres": [
       "喜剧",
       "剧情"
-    ]
+    ],
+    "title_cn": "伦敦生活"
   },
   {
     "hash": "f7501a747e589ddb38ba466ec37a6e2679b14f3b",
@@ -1987,7 +2105,8 @@ window.MAGNET_DATA = [
     "genres": [
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "杀死伊芙"
   },
   {
     "hash": "481c780e6d3f722c35ad29dcfa6dec557dc7d3ad",
@@ -2002,7 +2121,8 @@ window.MAGNET_DATA = [
       "剧情",
       "历史",
       "动作"
-    ]
+    ],
+    "title_cn": "切尔诺贝利"
   },
   {
     "hash": "b8407ea3bbbfa5403bf08e469a8a63b7fb603b3e",
@@ -2016,7 +2136,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "War & Politics"
-    ]
+    ],
+    "title_cn": "兄弟连"
   },
   {
     "hash": "f342f0ce2057218cac7da9c45a101ce985de90b0",
@@ -2031,7 +2152,8 @@ window.MAGNET_DATA = [
       "剧情",
       "动作冒险",
       "War & Politics"
-    ]
+    ],
+    "title_cn": "太平洋战争"
   },
   {
     "hash": "26655845838dd4a7124ae52ee504678533d75698",
@@ -2045,7 +2167,8 @@ window.MAGNET_DATA = [
     "genres": [
       "犯罪",
       "剧情"
-    ]
+    ],
+    "title_cn": "冰血暴"
   },
   {
     "hash": "98c4633e3f43c6ac488150aaacb00637dabe60d3",
@@ -2059,7 +2182,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "悬疑"
-    ]
+    ],
+    "title_cn": "真探"
   },
   {
     "hash": "44c90272c5e88d8ae05120616ef625529c3cb0ae",
@@ -2073,7 +2197,8 @@ window.MAGNET_DATA = [
     "genres": [
       "Sci-Fi & Fantasy",
       "西部"
-    ]
+    ],
+    "title_cn": "西部世界"
   },
   {
     "hash": "703868164d8e067d244a252bddaaa4f21f0286c4",
@@ -2088,7 +2213,8 @@ window.MAGNET_DATA = [
       "剧情",
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "使女的故事"
   },
   {
     "hash": "2f0c0015893c27286d64971e2660db7261809f22",
@@ -2101,7 +2227,8 @@ window.MAGNET_DATA = [
     "rating": "7.9",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "大小谎言"
   },
   {
     "hash": "e6579f08975ef1788042cc21e2822495c5f37df0",
@@ -2116,7 +2243,8 @@ window.MAGNET_DATA = [
       "剧情",
       "犯罪",
       "悬疑"
-    ]
+    ],
+    "title_cn": "东城梦魇"
   },
   {
     "hash": "b3b574716abe1e5f762f58ef3493e2560aebe22e",
@@ -2131,7 +2259,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "剧情",
       "悬疑"
-    ]
+    ],
+    "title_cn": "白莲花度假村"
   },
   {
     "hash": "8ecd1148a4d0dfbc3b91891984e20348fabf7a76",
@@ -2144,7 +2273,8 @@ window.MAGNET_DATA = [
     "rating": "8.3",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "亢奋"
   },
   {
     "hash": "88a3a4de6eed716c17c6449476ae5dd528d09657",
@@ -2157,7 +2287,8 @@ window.MAGNET_DATA = [
     "rating": "6.8",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "投行风云"
   },
   {
     "hash": "470bc5f4cf8178917cb8e0e615c694eb934e6ae6",
@@ -2173,7 +2304,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "Sci-Fi & Fantasy",
       "喜剧"
-    ]
+    ],
+    "title_cn": "Chainsaw Man"
   },
   {
     "hash": "781415857cfade0106d2b899461ba591ba094e4f",
@@ -2188,7 +2320,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作冒险",
       "喜剧"
-    ]
+    ],
+    "title_cn": "间谍过家家"
   },
   {
     "hash": "71f400d5de001f15559ada7fd9a3eba497c4ed98",
@@ -2203,7 +2336,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "咒术回战"
   },
   {
     "hash": "f7a727ae7a6f91e494b4a7d7ec150e21012ffe21",
@@ -2218,7 +2352,8 @@ window.MAGNET_DATA = [
       "动画",
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "进击的巨人"
   },
   {
     "hash": "2ff5782fea54b308be578d0f9b7bf5645c03a9d9",
@@ -2233,7 +2368,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作",
       "奇幻"
-    ]
+    ],
+    "title_cn": "鬼灭之刃：无限城篇 第一章 猗窝座再袭"
   },
   {
     "hash": "63e527459991043f5182f5fc1f2b0a769097fc37",
@@ -2247,7 +2383,8 @@ window.MAGNET_DATA = [
     "genres": [
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "ONE PIECE"
   },
   {
     "hash": "e4a47518953f87479d8438325909c8ec36750681",
@@ -2262,7 +2399,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "火影忍者：疾风传"
   },
   {
     "hash": "5f8f6e9a910c54f8fb1a1b3faf93f7440ab65ca5",
@@ -2277,7 +2415,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "动画",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "死神"
   },
   {
     "hash": "f9c42c59b78c34fa7972e43c53306889c6c39bda",
@@ -2292,7 +2431,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "动画",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "我的英雄学院"
   },
   {
     "hash": "c08a9e515c6ef7faf103b388f98d8182402b9eb6",
@@ -2308,7 +2448,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "Sci-Fi & Fantasy",
       "剧情"
-    ]
+    ],
+    "title_cn": "钢之炼金术师 FA"
   },
   {
     "hash": "113dd915102c196b710cf8fa9bc8912fef2b2ecd",
@@ -2324,7 +2465,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "Sci-Fi & Fantasy",
       "西部"
-    ]
+    ],
+    "title_cn": "星际牛仔"
   },
   {
     "hash": "e91dd376e6bdcf296b3f2b0ce959cb9b7ced9716",
@@ -2339,7 +2481,8 @@ window.MAGNET_DATA = [
       "动画",
       "悬疑",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "死亡笔记"
   },
   {
     "hash": "761a42e0496d8b2f745f57c7a4d66ba46248d22e",
@@ -2355,7 +2498,8 @@ window.MAGNET_DATA = [
       "喜剧",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "一拳超人"
   },
   {
     "hash": "38cdae4f6ca9a98a1a39db7d68ee68570b03fd25",
@@ -2371,7 +2515,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "喜剧",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "灵能百分百"
   },
   {
     "hash": "990c52c272c272782bc17fbca69304dac3862de5",
@@ -2387,7 +2532,8 @@ window.MAGNET_DATA = [
       "War & Politics",
       "动作冒险",
       "剧情"
-    ]
+    ],
+    "title_cn": "冰海战记"
   },
   {
     "hash": "a639f22938790198e2058793a2bb6d76f2c06a23",
@@ -2403,7 +2549,8 @@ window.MAGNET_DATA = [
       "剧情",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "来自深渊"
   },
   {
     "hash": "227372f76d5e23b480144e3d69901e56a9d6e69b",
@@ -2419,7 +2566,8 @@ window.MAGNET_DATA = [
       "剧情",
       "悬疑",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "约定的梦幻岛"
   },
   {
     "hash": "28bb527b65f9e1f626b31d972b450c81e0e12cb9",
@@ -2434,7 +2582,8 @@ window.MAGNET_DATA = [
       "动画",
       "剧情",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "东京食尸鬼"
   },
   {
     "hash": "efe7e4b6747cd3f1de534e4176c5641d4600d079",
@@ -2451,7 +2600,8 @@ window.MAGNET_DATA = [
       "悬疑",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "Re：从零开始的异世界生活"
   },
   {
     "hash": "ea82a8d8bcd3d512b0a3dc518f14b869290c5ac5",
@@ -2466,7 +2616,8 @@ window.MAGNET_DATA = [
       "动画",
       "喜剧",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "为美好的世界献上爆焰！"
   },
   {
     "hash": "a5d43e465dd31488d4add69239d86fcab8f306a1",
@@ -2481,7 +2632,8 @@ window.MAGNET_DATA = [
       "动画",
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "OVERLORD"
   },
   {
     "hash": "a901984e7d93440a9d55d04a8060533f53af9c3a",
@@ -2498,7 +2650,8 @@ window.MAGNET_DATA = [
       "悬疑",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "Re：从零开始的异世界生活"
   },
   {
     "hash": "851078f886f0138c74cc771a3effa8c52bf94630",
@@ -2513,7 +2666,8 @@ window.MAGNET_DATA = [
       "动画",
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "刀剑神域"
   },
   {
     "hash": "507d4c2de20fe4436a072ad08b76a4129e7492f2",
@@ -2529,7 +2683,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "Sci-Fi & Fantasy",
       "剧情"
-    ]
+    ],
+    "title_cn": "盾之勇者成名录"
   },
   {
     "hash": "4080badd4b04d010211b3657ce3d4d11a9082a7f",
@@ -2545,7 +2700,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "喜剧",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "石纪元"
   },
   {
     "hash": "0d36aafe6a9757baeeca03260e6e5e021d651be5",
@@ -2561,7 +2717,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "悬疑",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "神之塔"
   },
   {
     "hash": "796ab8c4a2d9a6c70a002e5add64d9eb78e2351c",
@@ -2576,7 +2733,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "我独自升级"
   },
   {
     "hash": "4f4cf81bdc88214a1f9c2d311204386154a21308",
@@ -2592,7 +2750,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "剧情",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "葬送的芙莉莲"
   },
   {
     "hash": "73f1bc1da9398dc809a55c3bab27c120eb4767a4",
@@ -2606,7 +2765,8 @@ window.MAGNET_DATA = [
     "genres": [
       "动画",
       "剧情"
-    ]
+    ],
+    "title_cn": "【我推的孩子】"
   },
   {
     "hash": "780b1ae45f6ad76f3bd42f80f45c91c02422adc0",
@@ -2620,7 +2780,8 @@ window.MAGNET_DATA = [
     "genres": [
       "动画",
       "喜剧"
-    ]
+    ],
+    "title_cn": "孤独摇滚！"
   },
   {
     "hash": "cf37f8b2e5e06f9632c7fe187224c1d12a3667d6",
@@ -2636,7 +2797,8 @@ window.MAGNET_DATA = [
       "动作冒险",
       "Sci-Fi & Fantasy",
       "犯罪"
-    ]
+    ],
+    "title_cn": "赛博朋克：边缘行者"
   },
   {
     "hash": "9626c406f0092f08b66723759f0b9b742bef94a3",
@@ -2680,7 +2842,8 @@ window.MAGNET_DATA = [
     "rating": "8.5",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "宇宙时空之旅"
   },
   {
     "hash": "d1ae67ac7456c31b0a1a6865cf2043fadfc6cc7e",
@@ -2693,7 +2856,8 @@ window.MAGNET_DATA = [
     "rating": "8.5",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "宇宙时空之旅"
   },
   {
     "hash": "5015011621f0360d4f08f3585a79943d56562dc4",
@@ -2729,7 +2893,8 @@ window.MAGNET_DATA = [
     "genres": [
       "纪录",
       "冒险"
-    ]
+    ],
+    "title_cn": "徒手攀岩"
   },
   {
     "hash": "377c27a967294150b9687f5f59296ad8b77ccd29",
@@ -2742,7 +2907,8 @@ window.MAGNET_DATA = [
     "rating": "7.9",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "我的章鱼老师"
   },
   {
     "hash": "e856757480eeeb24d95ed7823f4b25fa88da4abf",
@@ -2756,7 +2922,8 @@ window.MAGNET_DATA = [
     "genres": [
       "纪录",
       "犯罪"
-    ]
+    ],
+    "title_cn": "海洋阴谋"
   },
   {
     "hash": "a68a755d3026835e0eb983cdcd076338ebd21f3a",
@@ -2770,7 +2937,8 @@ window.MAGNET_DATA = [
     "genres": [
       "纪录",
       "剧情"
-    ]
+    ],
+    "title_cn": "智能陷阱"
   },
   {
     "hash": "1e8a3e2c8157c81ba84e9585d3d4100d08f11712",
@@ -2781,7 +2949,8 @@ window.MAGNET_DATA = [
     "magnet": "magnet:?xt=urn:btih:1e8a3e2c8157c81ba84e9585d3d4100d08f11712&tr=udp://open.demonii.com:1337/announce",
     "poster": "https://media.themoviedb.org/t/p/w780/a8ymgdC3KKnLTyNSB9TB2013VDz.jpg",
     "rating": "0.0",
-    "genres": []
+    "genres": [],
+    "title_cn": "美丽中国"
   },
   {
     "hash": "7282dd5fc723be359c03cc8d7e947a75469cdc3c",
@@ -2796,7 +2965,8 @@ window.MAGNET_DATA = [
       "剧情",
       "悬疑",
       "犯罪"
-    ]
+    ],
+    "title_cn": "终生惩戒"
   },
   {
     "hash": "4d5cb31c45ff134aa53f9f77c21eca6581447371",
@@ -2809,7 +2979,8 @@ window.MAGNET_DATA = [
     "rating": "8.3",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "人类星球"
   },
   {
     "hash": "86568e409aac0f38803f0e8ed670f191c40065bf",
@@ -2822,7 +2993,8 @@ window.MAGNET_DATA = [
     "rating": "8.3",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "非洲"
   },
   {
     "hash": "46c2b50a62d68da8fb13851d153a1b7c4d637af0",
@@ -2835,7 +3007,8 @@ window.MAGNET_DATA = [
     "rating": "8.4",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "冰冻星球"
   },
   {
     "hash": "0e8c297d20de661bc434d55d40572e8397f1160c",
@@ -2849,7 +3022,8 @@ window.MAGNET_DATA = [
     "genres": [
       "纪录",
       "家庭"
-    ]
+    ],
+    "title_cn": "七个世界，一个星球"
   },
   {
     "hash": "bcf343ca2dabe1cf2d0c931c241748647906871d",
@@ -2863,7 +3037,8 @@ window.MAGNET_DATA = [
     "genres": [
       "纪录",
       "家庭"
-    ]
+    ],
+    "title_cn": "王朝"
   },
   {
     "hash": "51efd1133e69eca5fd9ebffe152cfa237cea1d8f",
@@ -2876,7 +3051,8 @@ window.MAGNET_DATA = [
     "rating": "8.3",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "求偶游戏"
   },
   {
     "hash": "593d88062c3f36bf70eabe612312c4113b9d79a1",
@@ -2889,7 +3065,8 @@ window.MAGNET_DATA = [
     "rating": "7.3",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "美国：美丽之境"
   },
   {
     "hash": "4fc184d49957b3a44a340f760485e4931958cf07",
@@ -2902,6 +3079,7 @@ window.MAGNET_DATA = [
     "rating": "8.0",
     "genres": [
       "纪录"
-    ]
+    ],
+    "title_cn": "水深火热的星球"
   }
 ];
