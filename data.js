@@ -1671,7 +1671,14 @@ window.MAGNET_DATA = [
     "size": "62.1 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:3ca82205bb3f368e84817abb67888a39694b33d7&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:3ca82205bb3f368e84817abb67888a39694b33d7&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/9mCCxKnVew8tZJ9uDSc8TjbsOSp.jpg",
+    "rating": "5.7",
+    "genres": [
+      "惊悚",
+      "剧情",
+      "犯罪"
+    ]
   },
   {
     "hash": "fccda99ba34e8cc0ffd4d3befd9908aed435880d",
