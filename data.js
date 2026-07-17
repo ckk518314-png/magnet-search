@@ -1830,7 +1830,14 @@ window.MAGNET_DATA = [
     "size": "8.5 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:481c780e6d3f722c35ad29dcfa6dec557dc7d3ad&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:481c780e6d3f722c35ad29dcfa6dec557dc7d3ad&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/q5dIdOQPsYtjR3fmsOswLbglHAE.jpg",
+    "rating": "6.2",
+    "genres": [
+      "剧情",
+      "历史",
+      "动作"
+    ]
   },
   {
     "hash": "b8407ea3bbbfa5403bf08e469a8a63b7fb603b3e",
