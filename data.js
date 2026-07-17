@@ -1882,7 +1882,14 @@ window.MAGNET_DATA = [
     "size": "18.4 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:91a53f4ad01019596371d9287f6707a5f3af0627&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:91a53f4ad01019596371d9287f6707a5f3af0627&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/s69hd1WlHYuE4XmAlIm7iAIhuTo.jpg",
+    "rating": "8.4",
+    "genres": [
+      "剧情",
+      "悬疑",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "5fecf9c96a37678689ce222c45a5233820c68557",
@@ -1890,7 +1897,13 @@ window.MAGNET_DATA = [
     "size": "42.1 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5fecf9c96a37678689ce222c45a5233820c68557&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:5fecf9c96a37678689ce222c45a5233820c68557&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/tgImKD6CdMWAyCT8AVEx0eelfBD.jpg",
+    "rating": "8.3",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ]
   },
   {
     "hash": "088d334233fae0ab53b570b1dcc5387fb08402c9",
@@ -1898,7 +1911,13 @@ window.MAGNET_DATA = [
     "size": "21.2 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:088d334233fae0ab53b570b1dcc5387fb08402c9&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:088d334233fae0ab53b570b1dcc5387fb08402c9&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/7y1ibpkTwlKYrxFbq3lh2RgIB1k.jpg",
+    "rating": "8.1",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ]
   },
   {
     "hash": "95e81f06889f248b141bd5bf6851ff0437e5ddaa",
@@ -1906,7 +1925,14 @@ window.MAGNET_DATA = [
     "size": "15.6 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:95e81f06889f248b141bd5bf6851ff0437e5ddaa&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:95e81f06889f248b141bd5bf6851ff0437e5ddaa&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/tKPZy6BVWBjcIMr39cGNZ0zB3ko.jpg",
+    "rating": "8.3",
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "悬疑",
+      "喜剧"
+    ]
   },
   {
     "hash": "de9c59547267841a4be8a17d4e8b3f47220cc0f9",
@@ -1914,7 +1940,12 @@ window.MAGNET_DATA = [
     "size": "32.4 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:de9c59547267841a4be8a17d4e8b3f47220cc0f9&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:de9c59547267841a4be8a17d4e8b3f47220cc0f9&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/cfQiG7vE5yCqftnhNXu64f3qYLa.jpg",
+    "rating": "7.7",
+    "genres": [
+      "剧情"
+    ]
   },
   {
     "hash": "ec1d1e61ef59014ca6ef290aa4c492cf991f89c3",
@@ -1922,7 +1953,13 @@ window.MAGNET_DATA = [
     "size": "22.5 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:ec1d1e61ef59014ca6ef290aa4c492cf991f89c3&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:ec1d1e61ef59014ca6ef290aa4c492cf991f89c3&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/mo92ImS1Bkk24VxW8sOmazsyPQd.jpg",
+    "rating": "8.3",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ]
   },
   {
     "hash": "59e013cec85d1d8196f03429f702f4284c8b162f",
@@ -1930,7 +1967,13 @@ window.MAGNET_DATA = [
     "size": "8.2 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:59e013cec85d1d8196f03429f702f4284c8b162f&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:59e013cec85d1d8196f03429f702f4284c8b162f&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/nWsI7cPDqLQKw0kErgLCZDpEeEh.jpg",
+    "rating": "8.3",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ]
   },
   {
     "hash": "f7501a747e589ddb38ba466ec37a6e2679b14f3b",
@@ -1938,7 +1981,13 @@ window.MAGNET_DATA = [
     "size": "24.1 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:f7501a747e589ddb38ba466ec37a6e2679b14f3b&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:f7501a747e589ddb38ba466ec37a6e2679b14f3b&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/jJL8ohal6nqMb1ttmMcgXArfRnO.jpg",
+    "rating": "7.9",
+    "genres": [
+      "犯罪",
+      "剧情"
+    ]
   },
   {
     "hash": "481c780e6d3f722c35ad29dcfa6dec557dc7d3ad",
@@ -1961,7 +2010,13 @@ window.MAGNET_DATA = [
     "size": "15.2 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:b8407ea3bbbfa5403bf08e469a8a63b7fb603b3e&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:b8407ea3bbbfa5403bf08e469a8a63b7fb603b3e&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/sWcXXgyMs63QeIdm9KRyD5vGio4.jpg",
+    "rating": "8.6",
+    "genres": [
+      "剧情",
+      "War & Politics"
+    ]
   },
   {
     "hash": "f342f0ce2057218cac7da9c45a101ce985de90b0",
@@ -1969,7 +2024,14 @@ window.MAGNET_DATA = [
     "size": "18.4 GB",
     "category": "剧集",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:f342f0ce2057218cac7da9c45a101ce985de90b0&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:f342f0ce2057218cac7da9c45a101ce985de90b0&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/5arZjfF0FLAWsOSbggAk5xCiTZe.jpg",
+    "rating": "7.8",
+    "genres": [
+      "剧情",
+      "动作冒险",
+      "War & Politics"
+    ]
   },
   {
     "hash": "26655845838dd4a7124ae52ee504678533d75698",
