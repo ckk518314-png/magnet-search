@@ -84,7 +84,8 @@ window.MAGNET_DATA = [
     "size": "180 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:0d17b2d1c7e8da8149ec5acfa5a88c0cb8202f1e&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:0d17b2d1c7e8da8149ec5acfa5a88c0cb8202f1e&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "title_cn": "教父"
   },
   {
     "hash": "472454ea8b0fe8cde70f7d47ffe66264642ad718",
@@ -1872,7 +1873,8 @@ window.MAGNET_DATA = [
     "rating": "8.0",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "纸牌屋"
   },
   {
     "hash": "7b16d2340764ae3615af133a582a251d1c2f53da",
@@ -1901,7 +1903,8 @@ window.MAGNET_DATA = [
     "rating": "8.2",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "王冠"
   },
   {
     "hash": "bdefe7f1765e4f16d7c5dc2065059d6b9ea0f92a",
@@ -1916,7 +1919,8 @@ window.MAGNET_DATA = [
       "Sci-Fi & Fantasy",
       "剧情",
       "悬疑"
-    ]
+    ],
+    "title_cn": "黑镜"
   },
   {
     "hash": "bebf69a082ba46742a9c44189c58617c6d8d7110",
@@ -1930,7 +1934,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "犯罪"
-    ]
+    ],
+    "title_cn": "浴血黑帮"
   },
   {
     "hash": "62f26731dd710622dab84ac06ab80771f4b66314",
@@ -1944,7 +1949,8 @@ window.MAGNET_DATA = [
     "genres": [
       "Sci-Fi & Fantasy",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "黑袍纠察队"
   },
   {
     "hash": "cffa08148cf62ec47d02f2730901497018192707",
@@ -1974,7 +1980,8 @@ window.MAGNET_DATA = [
       "Sci-Fi & Fantasy",
       "剧情",
       "动作冒险"
-    ]
+    ],
+    "title_cn": "权力的游戏前传：龙族"
   },
   {
     "hash": "6a8df77b6f25c89f3fac8e21ca08b1492e5db995",
@@ -1987,7 +1994,8 @@ window.MAGNET_DATA = [
     "rating": "8.4",
     "genres": [
       "剧情"
-    ]
+    ],
+    "title_cn": "最后生还者"
   },
   {
     "hash": "91a53f4ad01019596371d9287f6707a5f3af0627",
@@ -2002,7 +2010,8 @@ window.MAGNET_DATA = [
       "剧情",
       "悬疑",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "Severance"
   },
   {
     "hash": "5fecf9c96a37678689ce222c45a5233820c68557",
@@ -2016,7 +2025,8 @@ window.MAGNET_DATA = [
     "genres": [
       "剧情",
       "喜剧"
-    ]
+    ],
+    "title_cn": "继承之战"
   },
   {
     "hash": "088d334233fae0ab53b570b1dcc5387fb08402c9",
@@ -2813,7 +2823,8 @@ window.MAGNET_DATA = [
       "动画",
       "动作冒险",
       "Sci-Fi & Fantasy"
-    ]
+    ],
+    "title_cn": "英雄联盟：双城之战"
   },
   {
     "hash": "9d0072aeee04343ba85e2d383b5129469c1b3930",
@@ -2821,7 +2832,8 @@ window.MAGNET_DATA = [
     "size": "152.4 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:9d0072aeee04343ba85e2d383b5129469c1b3930&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:9d0072aeee04343ba85e2d383b5129469c1b3930&tr=udp://open.demonii.com:1337/announce",
+    "title_cn": "地球脉动"
   },
   {
     "hash": "39adcec81ca487b7ae6a6c96b74bf1f711da19b8",
@@ -2829,7 +2841,8 @@ window.MAGNET_DATA = [
     "size": "85.2 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:39adcec81ca487b7ae6a6c96b74bf1f711da19b8&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:39adcec81ca487b7ae6a6c96b74bf1f711da19b8&tr=udp://open.demonii.com:1337/announce",
+    "title_cn": "蓝色星球 2"
   },
   {
     "hash": "40b73c79727e08affd1fa46da34845abb519cfbe",
@@ -2865,7 +2878,8 @@ window.MAGNET_DATA = [
     "size": "62.1 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5015011621f0360d4f08f3585a79943d56562dc4&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:5015011621f0360d4f08f3585a79943d56562dc4&tr=udp://open.demonii.com:1337/announce",
+    "title_cn": "我们的星球"
   },
   {
     "hash": "8bd748cdb2c6b6f669cfb00f76d7b480c3fbf3a0",
@@ -2879,7 +2893,8 @@ window.MAGNET_DATA = [
     "genres": [
       "音乐",
       "纪录"
-    ]
+    ],
+    "title_cn": "披头士乐队：回归"
   },
   {
     "hash": "790219c7f8c6256a4b95b993400ae06ebadaf195",
