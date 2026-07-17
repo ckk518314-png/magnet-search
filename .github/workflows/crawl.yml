@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      deployments: write
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -23,13 +22,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: 执行爬虫
-        run: python crawler.py
-        timeout-minutes: 10
-        continue-on-error: true
+        run: timeout 1500 python crawler.py || true
+        timeout-minutes: 30
 
-      - name: 豆瓣增强（海报/简介/评分）
+      - name: TMDB增强
         run: python enhance.py
         timeout-minutes: 30
+        continue-on-error: true
 
       - name: 提交 data.js
         run: |
@@ -37,17 +36,4 @@ jobs:
           git config user.email "actions@github.com"
           git add data.js
           git diff --staged --quiet || git commit -m "自动更新 data.js [skip ci]"
-          git push
-
-      - name: 安装 Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: 部署到 Cloudflare Pages
-        run: |
-          npm install -g wrangler
-          npx wrangler pages deploy . --project-name=magnet-search --branch=main
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          git push || true
