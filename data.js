@@ -2181,7 +2181,14 @@ window.MAGNET_DATA = [
     "size": "11.5 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:781415857cfade0106d2b899461ba591ba094e4f&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:781415857cfade0106d2b899461ba591ba094e4f&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/xkEGd9GF3oty89xDiXMGJm6pGQL.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "喜剧"
+    ]
   },
   {
     "hash": "71f400d5de001f15559ada7fd9a3eba497c4ed98",
@@ -2189,7 +2196,14 @@ window.MAGNET_DATA = [
     "size": "16.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:71f400d5de001f15559ada7fd9a3eba497c4ed98&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:71f400d5de001f15559ada7fd9a3eba497c4ed98&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/kdE1ALF5G6DFMyDU67AyyUklEtn.jpg",
+    "rating": "8.6",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "f7a727ae7a6f91e494b4a7d7ec150e21012ffe21",
@@ -2197,7 +2211,14 @@ window.MAGNET_DATA = [
     "size": "32.5 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:f7a727ae7a6f91e494b4a7d7ec150e21012ffe21&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:f7a727ae7a6f91e494b4a7d7ec150e21012ffe21&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/1j3s19nko8OtGhCRwRMDGmr0m5O.jpg",
+    "rating": "8.7",
+    "genres": [
+      "动画",
+      "Sci-Fi & Fantasy",
+      "动作冒险"
+    ]
   },
   {
     "hash": "2ff5782fea54b308be578d0f9b7bf5645c03a9d9",
@@ -2205,7 +2226,14 @@ window.MAGNET_DATA = [
     "size": "28.1 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:2ff5782fea54b308be578d0f9b7bf5645c03a9d9&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:2ff5782fea54b308be578d0f9b7bf5645c03a9d9&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/7kelotRA447lTaBviPrw2jom9cr.jpg",
+    "rating": "7.7",
+    "genres": [
+      "动画",
+      "动作",
+      "奇幻"
+    ]
   },
   {
     "hash": "63e527459991043f5182f5fc1f2b0a769097fc37",
@@ -2213,7 +2241,13 @@ window.MAGNET_DATA = [
     "size": "12.4 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:63e527459991043f5182f5fc1f2b0a769097fc37&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:63e527459991043f5182f5fc1f2b0a769097fc37&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/nSHBJp1ulPxdp7vtUTrhoXjZjfb.jpg",
+    "rating": "8.1",
+    "genres": [
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "e4a47518953f87479d8438325909c8ec36750681",
@@ -2221,7 +2255,14 @@ window.MAGNET_DATA = [
     "size": "85.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:e4a47518953f87479d8438325909c8ec36750681&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:e4a47518953f87479d8438325909c8ec36750681&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/7jGvTx2rvXbXAY6dOmLDMUnBqne.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "5f8f6e9a910c54f8fb1a1b3faf93f7440ab65ca5",
@@ -2229,7 +2270,14 @@ window.MAGNET_DATA = [
     "size": "78.4 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5f8f6e9a910c54f8fb1a1b3faf93f7440ab65ca5&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:5f8f6e9a910c54f8fb1a1b3faf93f7440ab65ca5&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/eTnnHbvI59hUzowsuqpPOtJZFI9.jpg",
+    "rating": "8.4",
+    "genres": [
+      "动作冒险",
+      "动画",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "f9c42c59b78c34fa7972e43c53306889c6c39bda",
@@ -2237,7 +2285,14 @@ window.MAGNET_DATA = [
     "size": "38.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:f9c42c59b78c34fa7972e43c53306889c6c39bda&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:f9c42c59b78c34fa7972e43c53306889c6c39bda&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/AnECHXeDNcpyaYbN6Fy8FkHnDK5.jpg",
+    "rating": "8.6",
+    "genres": [
+      "动作冒险",
+      "动画",
+      "Sci-Fi & Fantasy"
+    ]
   },
   {
     "hash": "c08a9e515c6ef7faf103b388f98d8182402b9eb6",
@@ -2245,7 +2300,15 @@ window.MAGNET_DATA = [
     "size": "8.5 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:c08a9e515c6ef7faf103b388f98d8182402b9eb6&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:c08a9e515c6ef7faf103b388f98d8182402b9eb6&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/w1tRC9Xu5R4OP4eGkIXP1DGJi4S.jpg",
+    "rating": "8.7",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "Sci-Fi & Fantasy",
+      "剧情"
+    ]
   },
   {
     "hash": "113dd915102c196b710cf8fa9bc8912fef2b2ecd",
@@ -2253,7 +2316,15 @@ window.MAGNET_DATA = [
     "size": "5.2 GB",
     "category": "动漫",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:113dd915102c196b710cf8fa9bc8912fef2b2ecd&tr=udp://tracker.coppersurfer.tk:6969"
+    "magnet": "magnet:?xt=urn:btih:113dd915102c196b710cf8fa9bc8912fef2b2ecd&tr=udp://tracker.coppersurfer.tk:6969",
+    "poster": "https://media.themoviedb.org/t/p/w780/1v0xB1cIZ33Ni0VxBUAykmoBXMP.jpg",
+    "rating": "8.5",
+    "genres": [
+      "动画",
+      "动作冒险",
+      "Sci-Fi & Fantasy",
+      "西部"
+    ]
   },
   {
     "hash": "e91dd376e6bdcf296b3f2b0ce959cb9b7ced9716",
