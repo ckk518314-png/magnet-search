@@ -664,7 +664,14 @@ window.MAGNET_DATA = [
     "size": "58.3 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:6d68188ead7ac33db4115c43e3470880374950fc&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:6d68188ead7ac33db4115c43e3470880374950fc&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/p2hhr9FlQjm0OuQ1b8W7YCQzr7T.jpg",
+    "rating": "6.5",
+    "genres": [
+      "动作",
+      "冒险",
+      "奇幻"
+    ]
   },
   {
     "hash": "70d243141b70d2f4d938253d3d86910b5fc7f0a9",
@@ -672,7 +679,14 @@ window.MAGNET_DATA = [
     "size": "42.1 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:70d243141b70d2f4d938253d3d86910b5fc7f0a9&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:70d243141b70d2f4d938253d3d86910b5fc7f0a9&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/kHnjIRs2oqKDW8cV4xFo1uQPai3.jpg",
+    "rating": "7.0",
+    "genres": [
+      "喜剧",
+      "家庭",
+      "奇幻"
+    ]
   },
   {
     "hash": "a20d498890586a67d4f7350bc2ea4d962d45caa5",
@@ -680,7 +694,14 @@ window.MAGNET_DATA = [
     "size": "38.4 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:a20d498890586a67d4f7350bc2ea4d962d45caa5&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:a20d498890586a67d4f7350bc2ea4d962d45caa5&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/p2L0aO4eQkKn49vyF09Oc4J136N.jpg",
+    "rating": "5.9",
+    "genres": [
+      "科幻",
+      "冒险",
+      "动作"
+    ]
   },
   {
     "hash": "142aee01091e9b7dd6178db46b8638e664ec7d82",
@@ -688,7 +709,15 @@ window.MAGNET_DATA = [
     "size": "32.5 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:142aee01091e9b7dd6178db46b8638e664ec7d82&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:142aee01091e9b7dd6178db46b8638e664ec7d82&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/fPk65POTGclCJtMC4PLhjgbkxvP.jpg",
+    "rating": "6.2",
+    "genres": [
+      "动画",
+      "家庭",
+      "奇幻",
+      "冒险"
+    ]
   },
   {
     "hash": "58a8707142be91d9745e673dc7cb9133bf76cdfa",
@@ -696,7 +725,14 @@ window.MAGNET_DATA = [
     "size": "45.6 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:58a8707142be91d9745e673dc7cb9133bf76cdfa&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:58a8707142be91d9745e673dc7cb9133bf76cdfa&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/5XJRtk8C0jB5eLXM9Nubz8M8uCN.jpg",
+    "rating": "7.6",
+    "genres": [
+      "科幻",
+      "爱情",
+      "喜剧"
+    ]
   },
   {
     "hash": "6521d914438aaa0b21aa7d2f5a44d231cec5a2f5",
@@ -704,7 +740,13 @@ window.MAGNET_DATA = [
     "size": "32.1 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:6521d914438aaa0b21aa7d2f5a44d231cec5a2f5&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:6521d914438aaa0b21aa7d2f5a44d231cec5a2f5&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/s7MKwMaRHL5VtEcdqaCiPlsd6Mc.jpg",
+    "rating": "7.7",
+    "genres": [
+      "剧情",
+      "爱情"
+    ]
   },
   {
     "hash": "cf9e5deceeb0a9c253520957c953ab4e5865b2b3",
@@ -712,7 +754,14 @@ window.MAGNET_DATA = [
     "size": "12.3 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:cf9e5deceeb0a9c253520957c953ab4e5865b2b3&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:cf9e5deceeb0a9c253520957c953ab4e5865b2b3&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/64sltz8tKvDxpIT7GHhFCyOVBKH.jpg",
+    "rating": "7.5",
+    "genres": [
+      "惊悚",
+      "悬疑",
+      "犯罪"
+    ]
   },
   {
     "hash": "eafe3b3f264ea08a896646bcac1f3064bb6a7dd4",
@@ -720,7 +769,13 @@ window.MAGNET_DATA = [
     "size": "42.5 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:eafe3b3f264ea08a896646bcac1f3064bb6a7dd4&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:eafe3b3f264ea08a896646bcac1f3064bb6a7dd4&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/4wtjnTo0hQjzl0UBaeTddNe84rR.jpg",
+    "rating": "7.6",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ]
   },
   {
     "hash": "0c900f1baecb7b915b9d2a709c35f477428a1ad3",
@@ -728,7 +783,13 @@ window.MAGNET_DATA = [
     "size": "8.2 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:0c900f1baecb7b915b9d2a709c35f477428a1ad3&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:0c900f1baecb7b915b9d2a709c35f477428a1ad3&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/z2l9Sv2hvkrJabe2s2p8KHL2zrR.jpg",
+    "rating": "7.3",
+    "genres": [
+      "喜剧",
+      "剧情"
+    ]
   },
   {
     "hash": "b21b681f18b4a6007984f6c5c313f301041da002",
@@ -736,7 +797,14 @@ window.MAGNET_DATA = [
     "size": "28.1 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:b21b681f18b4a6007984f6c5c313f301041da002&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:b21b681f18b4a6007984f6c5c313f301041da002&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://media.themoviedb.org/t/p/w780/tbzjtltoifyNn2EMzvQLFavx0qu.jpg",
+    "rating": "6.3",
+    "genres": [
+      "剧情",
+      "爱情",
+      "音乐"
+    ]
   },
   {
     "hash": "26f97e61ede23e968c54609cbd72869673974ab1",
