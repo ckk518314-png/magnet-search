@@ -115,7 +115,7 @@ function renderGrid(data){
     html+=`<div class="card" onclick="openDetail('${escaped}')">
       <div class="card-poster">${poster?`<img src="${poster}" alt="" loading="lazy" onerror="this.parentElement.innerHTML='<div class=placeholder>${initial}</div>'">`:`<div class="placeholder">${initial}</div>`}</div>
       <div class="card-body">
-        <h3>${(i.name||'未知').replace(/\./g,' ')}</h3>
+        <h3>${i.title_cn||(i.name||'未知').replace(/\./g,' ')}</h3>
         <div class="card-meta">
           ${i.rating?`<span class="rating">★ ${i.rating}</span>`:''}
           <span class="size">${i.size||''}</span>
@@ -129,12 +129,15 @@ function renderGrid(data){
 }
 
 function search(){
-  let k=document.getElementById('searchInput').value.trim().toLowerCase(),
+  let k=document.getElementById('searchInput').value.trim(),
       c=document.getElementById('categoryFilter').value,
       s=parseFloat(document.getElementById('sizeFilter').value)||0;
   let f=allData.filter(i=>{
-    let n=(i.name||'').toLowerCase();
-    return n.includes(k)&&(!c||(i.category||'')===c)&&(parseFloat((i.size||'0').replace(/[^0-9.]/g,''))||0)>=s;
+    let n=(i.name||'')+' '+(i.title_cn||'');
+    if(k!==''&&!n.includes(k)) return false;
+    if(c&&(i.category||'')!==c) return false;
+    if(s&&(parseFloat((i.size||'0').replace(/[^0-9.]/g,''))||0)<s) return false;
+    return true;
   });
   document.getElementById('status').innerHTML='找到 '+f.length+' 个结果';
   renderGrid(f.slice(0,80));
