@@ -1500,7 +1500,14 @@ window.MAGNET_DATA = [
     "size": "4.2 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:a3da6740cd26563614282d6c974631c3042f373b&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:a3da6740cd26563614282d6c974631c3042f373b&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/6Am7v2chOFtXinyndRlOQRdiUyH.jpg",
+    "rating": "8.1",
+    "genres": [
+      "动作",
+      "冒险",
+      "奇幻"
+    ]
   },
   {
     "hash": "df22c774e254a42a9f40c1f9b5f5f2e47a84817f",
@@ -1508,7 +1515,14 @@ window.MAGNET_DATA = [
     "size": "2.6 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:df22c774e254a42a9f40c1f9b5f5f2e47a84817f&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:df22c774e254a42a9f40c1f9b5f5f2e47a84817f&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/t8JXIAUiZ7ouxsFPR73RZSqBVCs.jpg",
+    "rating": "6.9",
+    "genres": [
+      "动作",
+      "惊悚",
+      "战争"
+    ]
   },
   {
     "hash": "8c43bc8e06d8155c62f4d16c7f7be1cb15efaa23",
@@ -1516,7 +1530,12 @@ window.MAGNET_DATA = [
     "size": "2.1 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:8c43bc8e06d8155c62f4d16c7f7be1cb15efaa23&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:8c43bc8e06d8155c62f4d16c7f7be1cb15efaa23&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/90rCWH41mj9hjHUEy2SOHfuAOl3.jpg",
+    "rating": "8.0",
+    "genres": [
+      "纪录"
+    ]
   },
   {
     "hash": "3e918f9b85d46c1211c32e0a2ab5f52ac868d7d0",
@@ -1524,7 +1543,12 @@ window.MAGNET_DATA = [
     "size": "2.4 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:3e918f9b85d46c1211c32e0a2ab5f52ac868d7d0&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:3e918f9b85d46c1211c32e0a2ab5f52ac868d7d0&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/v1BjTc4bNeuKYwgETpTgC9JAChF.jpg",
+    "rating": "7.2",
+    "genres": [
+      "剧情"
+    ]
   },
   {
     "hash": "0a5e7fdde9dd067a47ed7f810b4cd60ae69a0aca",
@@ -1532,7 +1556,14 @@ window.MAGNET_DATA = [
     "size": "2.2 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:0a5e7fdde9dd067a47ed7f810b4cd60ae69a0aca&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:0a5e7fdde9dd067a47ed7f810b4cd60ae69a0aca&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/iT5zFXToud5j8lwu7SKKkVVQJF5.jpg",
+    "rating": "7.4",
+    "genres": [
+      "惊悚",
+      "犯罪",
+      "剧情"
+    ]
   },
   {
     "hash": "b33906e23df917ab10ebe20b8a8f4714e12ab9db",
@@ -1540,7 +1571,13 @@ window.MAGNET_DATA = [
     "size": "2.5 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:b33906e23df917ab10ebe20b8a8f4714e12ab9db&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:b33906e23df917ab10ebe20b8a8f4714e12ab9db&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/rU6lxs8ddoH6BpxoL5N5C7EKO2S.jpg",
+    "rating": "7.3",
+    "genres": [
+      "剧情",
+      "历史"
+    ]
   },
   {
     "hash": "5c707eeab95de2d9731705df937dcefb94cd735c",
@@ -1548,7 +1585,13 @@ window.MAGNET_DATA = [
     "size": "2.3 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5c707eeab95de2d9731705df937dcefb94cd735c&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:5c707eeab95de2d9731705df937dcefb94cd735c&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/uhSnfiPdNBsSjNJEwB00Am7MT6Y.jpg",
+    "rating": "7.7",
+    "genres": [
+      "剧情",
+      "音乐"
+    ]
   },
   {
     "hash": "98dc67634eecc48974245eddee12d7db6cf0ca59",
