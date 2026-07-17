@@ -1,14 +1,15 @@
-name: 自动爬取增强部署
+name: TMDB增强+Cloudflare部署
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
-  crawl-enhance-deploy:
+  enhance-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      deployments: write
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
@@ -21,11 +22,7 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      - name: 执行爬虫
-        run: timeout 1500 python crawler.py || true
-        timeout-minutes: 30
-
-      - name: TMDB增强
+      - name: TMDB增强（海报/评分/中文名）
         run: python enhance.py
         timeout-minutes: 30
         continue-on-error: true
@@ -37,3 +34,12 @@ jobs:
           git add data.js
           git diff --staged --quiet || git commit -m "自动更新 data.js [skip ci]"
           git push || true
+
+      - name: 部署到 Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: magnet-search
+          directory: .
+          branch: main
