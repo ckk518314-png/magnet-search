@@ -1,223 +1,165 @@
 #!/usr/bin/env python3
-"""增强 data.js：从豆瓣爬取海报、简介、评分等信息。纯自动化，无需 API Key。"""
-
-import json
-import re
-import time
-import random
+"""增强 data.js — TMDB 数据源（海报名/评分/类型/简介）"""
+import re, json, time, sys, random
 import requests
 from bs4 import BeautifulSoup
-from urllib.parse import quote
 
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-]
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "zh-CN,zh;q=0.9",
+}
 
-CACHE = {}  # 豆瓣搜索结果缓存
+def extract_title(name: str) -> str:
+    """从文件名提取搜索关键词"""
+    name = re.sub(r'\.\d{4}\..*$', '', name).strip('.')
+    name = name.replace('.', ' ')
+    name = re.sub(r'\s+\d{4}$', '', name)
+    name = re.sub(r'\b(2160p|UHD|BluRay|REMUX|HDR|HEVC|H265|x265|H\.?264|x264|10bit|WEB-?DL|DV|DoVi|Atmos|TrueHD|DTS|HD|MA|RERIP|PROPER|REPACK|IMAX|Hybrid|DV\b.*)\b', '', name, flags=re.IGNORECASE)
+    name = re.sub(r'\s{2,}', ' ', name)
+    return name.strip()
 
-def extract_title(filename):
-    """从文件名提取电影/剧集名称"""
-    name = filename
-    # 移除常见后缀标签
-    name = re.sub(r'\b\d{4}\b.*$', '', name)  # 从年份开始截断
-    name = re.sub(r'\.S\d{2}.*$', '', name)    # 剧集季号
-    name = re.sub(r'\.COMPLETE.*$', '', name)
-    name = re.sub(r'\.(19|20)\d{2}\..*$', '', name)
-    # 替换点号为空格
-    name = name.replace('.', ' ').strip()
-    # 移除常见标签
-    name = re.sub(r'\b(1080p|2160p|4K|UHD|BluRay|REMUX|HEVC|HDR|HDR10\+|WEB-DL|NF|AMZN|HMAX|HBO|ATVP|DSNP|HULU|CR|DDP|Atmos|x264|x265|AAC|DTS-HD|TrueHD)\b', '', name, flags=re.IGNORECASE)
-    name = re.sub(r'\s+', ' ', name).strip()
-    return name if name else filename
-
-def extract_year(filename):
-    """从文件名提取年份"""
-    match = re.search(r'\b((?:19|20)\d{2})\b', filename)
-    return match.group(1) if match else ""
-
-def search_douban(title, year=""):
-    """搜索豆瓣电影/剧集，返回(海报URL, 简介, 评分, 类型, 导演, 演员)"""
-    cache_key = f"{title}|{year}"
-    if cache_key in CACHE:
-        return CACHE[cache_key]
-
+def search_tmdb(title: str, year: str = "") -> int | None:
+    """搜索 TMDB 返回电影 ID"""
+    url = f"https://www.themoviedb.org/search?query={title}&language=zh-CN"
     try:
-        search_url = f"https://movie.douban.com/subject_search?search_text={quote(title)}"
-        headers = {"User-Agent": random.choice(USER_AGENTS)}
-        resp = requests.get(search_url, headers=headers, timeout=15)
-        if resp.status_code != 200:
-            CACHE[cache_key] = None
-            return None
-
+        resp = requests.get(url, headers=HEADERS, timeout=15)
         soup = BeautifulSoup(resp.text, "html.parser")
-
-        # 获取第一个搜索结果
-        item = soup.find("div", class_="item-root")
-        if not item:
-            # 试试直接跳转（豆瓣有时会直接跳转到详情页）
-            detail_url = resp.url if "subject" in resp.url else None
-            if not detail_url:
-                CACHE[cache_key] = None
-                return None
-            # 直接爬详情页
-            detail_resp = requests.get(detail_url, headers=headers, timeout=15)
-            if detail_resp.status_code != 200:
-                CACHE[cache_key] = None
-                return None
-            soup = BeautifulSoup(detail_resp.text, "html.parser")
-            return parse_detail_page(soup, cache_key)
-
-        # 获取详情页链接
-        detail_link = item.find("a", class_="cover-link")
-        if not detail_link:
-            detail_link = item.find("a", href=re.compile(r"/subject/"))
-        if not detail_link:
-            CACHE[cache_key] = None
-            return None
-
-        detail_url = detail_link["href"]
-        if not detail_url.startswith("http"):
-            detail_url = "https://movie.douban.com" + detail_url
-
-        time.sleep(random.uniform(1.5, 3))
-        detail_resp = requests.get(detail_url, headers=headers, timeout=15)
-        if detail_resp.status_code != 200:
-            CACHE[cache_key] = None
-            return None
-
-        soup = BeautifulSoup(detail_resp.text, "html.parser")
-        result = parse_detail_page(soup, cache_key)
-        return result
-
-    except Exception as e:
-        print(f"  ⚠ 搜索 '{title}' 失败: {e}")
-        CACHE[cache_key] = None
+    except:
         return None
 
-def parse_detail_page(soup, cache_key):
-    """解析豆瓣详情页"""
+    # 找到 movie 区域的链接
+    for a in soup.find_all("a", href=re.compile(r'/movie/\d+')):
+        href = a["href"]
+        m = re.match(r'/movie/(\d+)', href)
+        if not m:
+            continue
+        mid = int(m.group(1))
+        
+        # 检查是否在正确区域（排除 TV/people 等）
+        parent = a.find_parent()
+        for _ in range(5):
+            if parent is None:
+                break
+            # 如果是 card 容器，检查类型
+            cls = parent.get("class", [])
+            if "card" in str(cls).lower():
+                # 确认是 movie 类型
+                result_type = parent.get("data-media-type", "")
+                if result_type == "movie" or not result_type:
+                    return mid
+                break
+            parent = parent.find_parent()
+        
+        # 如果没有 card 容器，直接返回第一个 movie
+        return mid
+
+    return None
+
+def get_movie_detail(movie_id: int) -> dict | None:
+    """获取 TMDB 影片详情"""
+    url = f"https://www.themoviedb.org/movie/{movie_id}?language=zh-CN"
     try:
-        # 海报
-        poster = ""
-        poster_tag = soup.find("img", rel="v:image")
-        if not poster_tag:
-            poster_tag = soup.find("a", class_="nbgnbg")
-            if poster_tag:
-                poster_img = poster_tag.find("img")
-                poster = poster_img["src"] if poster_img else ""
-        else:
-            poster = poster_tag.get("src", "")
-        if poster:
-            poster = poster.replace("/view/photo/m/public/", "/view/photo/l/public/")
-
-        # 简介
-        overview = ""
-        summary_tag = soup.find("span", property="v:summary")
-        if not summary_tag:
-            summary_tag = soup.find("div", class_="indent", id="link-report")
-            if summary_tag:
-                summary_text = summary_tag.find("span", class_="all hidden")
-                if not summary_text:
-                    summary_text = summary_tag.find("span")
-                overview = summary_text.get_text(strip=True) if summary_text else ""
-        else:
-            overview = summary_tag.get_text(strip=True)
-        if overview:
-            overview = overview[:300]
-
-        # 评分
-        rating = ""
-        rating_tag = soup.find("strong", property="v:average")
-        if rating_tag:
-            rating = rating_tag.get_text(strip=True)
-
-        # 类型
-        genres = []
-        for g in soup.find_all("span", property="v:genre"):
-            genres.append(g.get_text(strip=True))
-        genre_str = ", ".join(genres[:4]) if genres else ""
-
-        # 导演
-        director = ""
-        dir_tag = soup.find("a", rel="v:directedBy")
-        if dir_tag:
-            director = dir_tag.get_text(strip=True)
-
-        # 演员
-        actors = []
-        for a in soup.find_all("a", rel="v:starring")[:3]:
-            actors.append(a.get_text(strip=True))
-        cast_str = ", ".join(actors) if actors else ""
-
-        result = (poster, overview, rating, genre_str, director, cast_str)
-        CACHE[cache_key] = result
-        return result
-
-    except Exception as e:
-        print(f"  ⚠ 解析详情页失败: {e}")
-        CACHE[cache_key] = None
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        soup = BeautifulSoup(resp.text, "html.parser")
+    except:
         return None
 
-def enhance():
-    print("🔍 开始从豆瓣获取影片详情...")
+    info = {}
 
-    with open("data.js", "r", encoding="utf-8") as f:
+    # og:image (海报)
+    og_img = soup.find("meta", property="og:image")
+    if og_img and og_img.get("content"):
+        poster = og_img["content"]
+        # 升级到高质量
+        poster = poster.replace("/w500/", "/w780/")
+        info["poster"] = poster
+
+    # 评分
+    rating_el = soup.find("div", class_="user_score_chart")
+    if rating_el:
+        pct = rating_el.get("data-percent", "")
+        if pct:
+            info["rating"] = str(int(pct) / 10)  # 78% -> 7.8
+
+    # 类型
+    genres = []
+    for span in soup.find_all("span", class_="genres"):
+        for a in span.find_all("a"):
+            genres.append(a.get_text(strip=True))
+    info["genres"] = genres
+
+    # 简介
+    overview_el = soup.find("div", class_="overview")
+    if overview_el:
+        p = overview_el.find("p")
+        if p:
+            info["overview"] = p.get_text(strip=True)
+
+    # 上映日期
+    date_el = soup.find("span", class_="release_date")
+    if date_el:
+        txt = date_el.get_text(strip=True)
+        m = re.search(r'(\d{4})', txt)
+        if m:
+            info["year"] = m.group(1)
+
+    return info if info else None
+
+def main(data_file: str, output_file: str):
+    with open(data_file, "r", encoding="utf-8") as f:
         content = f.read()
 
-    match = re.search(r'window\.MAGNET_DATA\s*=\s*([\s\S]*?);', content)
-    if not match:
-        print("❌ 未找到 data.js 中的数据")
-        return
+    m = re.search(r'window\.MAGNET_DATA\s*=\s*([\s\S]*?);', content)
+    items = json.loads(m.group(1))
 
-    data = json.loads(match.group(1))
-    total = len(data)
-    print(f"📦 共 {total} 条数据待增强\n")
+    waiting = [(i, item) for i, item in enumerate(items) if not item.get("poster")]
+    print(f"📦 共 {len(items)} 条，其中 {len(waiting)} 条待增强\n")
 
-    enhanced_count = 0
-    for idx, item in enumerate(data):
+    enhanced = 0
+    for idx, (i, item) in enumerate(waiting):
         name = item.get("name", "")
         title = extract_title(name)
-        year = extract_year(name)
+        
+        # 提取年份
+        year_match = re.search(r'\.(\d{4})\.', name)
+        year = year_match.group(1) if year_match else ""
+        
+        print(f"[{idx+1}/{len(waiting)}] {title[:45]} ... ", end="", flush=True)
 
-        # 跳过已有海报的条目
-        if item.get("poster"):
+        movie_id = search_tmdb(title, year)
+        if not movie_id:
+            print("❌ 未找到")
+            time.sleep(1 + random.random())
             continue
 
-        print(f"[{idx+1}/{total}] {title} ...", end=" ", flush=True)
-        result = search_douban(title, year)
+        time.sleep(0.8 + random.random() * 0.5)
+        detail = get_movie_detail(movie_id)
 
-        if result:
-            poster, overview, rating, genres, director, cast_str = result
-            if poster:
-                item["poster"] = poster
-                enhanced_count += 1
-            if overview:
-                item["overview"] = overview
-            if rating:
-                item["rating"] = rating
-            if genres:
-                item["genres"] = genres
-            if director:
-                item["director"] = director
-            if cast_str:
-                item["cast"] = cast_str
-
-            print(f"✅ 评分 {rating}" if rating else "✅")
+        if detail and detail.get("poster"):
+            item["poster"] = detail.get("poster", "")
+            item["rating"] = detail.get("rating", "")
+            item["genres"] = detail.get("genres", [])
+            item["overview"] = detail.get("overview", "")
+            item["year"] = detail.get("year", year)
+            enhanced += 1
+            print(f"✅ {detail.get('rating','?')}")
         else:
-            print("❌ 未找到")
+            print("❌ 无详情")
 
-        if (idx + 1) % 10 == 0:
-            print(f"\n⏳ 已处理 {idx+1}/{total}，休息 5 秒...\n")
-            time.sleep(5)
+        time.sleep(1.5 + random.random() * 1)
 
-    # 写回 data.js
-    print(f"\n💾 写入 data.js（共增强 {enhanced_count} 条海报）...")
-    with open("data.js", "w", encoding="utf-8") as f:
-        f.write("window.MAGNET_DATA = " + json.dumps(data, ensure_ascii=False, indent=2) + ";")
+    new_data = json.dumps(items, ensure_ascii=False, indent=2)
+    header = content[:m.start()]
+    footer = content[m.end():]
+    new_content = header + "window.MAGNET_DATA = " + new_data + ";" + footer
 
-    print("✅ 增强完成！")
+    with open(output_file, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+    print(f"\n💾 {output_file}")
+    print(f"✅ 增强完成！{enhanced}/{len(waiting)}")
 
 if __name__ == "__main__":
-    enhance()
+    data_file = sys.argv[1] if len(sys.argv) > 1 else "data.js"
+    output_file = sys.argv[2] if len(sys.argv) > 2 else data_file
+    main(data_file, output_file)
