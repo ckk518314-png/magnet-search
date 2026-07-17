@@ -5,7 +5,22 @@ window.MAGNET_DATA = [
     "size": "21.3 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:6ee785725e843bf490ea14754c0c7f2ab9eaf7f6&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:6ee785725e843bf490ea14754c0c7f2ab9eaf7f6&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img1.doubanio.com/view/photo/l_ratio_poster/public/p2612061299.jpg",
+    "rating": "7.6",
+    "genres": [
+      "剧情",
+      "动作",
+      "科幻"
+    ],
+    "director": "克里斯托弗·诺兰",
+    "cast": [
+      "约翰·大卫·华盛顿",
+      "罗伯特·帕丁森",
+      "伊丽莎白·德比齐",
+      "肯尼思·布拉纳",
+      "亚伦·泰勒-约翰逊"
+    ]
   },
   {
     "hash": "5d0cdf440f5ee3230c00cef7501f13ff0f9d6cd0",
@@ -13,7 +28,21 @@ window.MAGNET_DATA = [
     "size": "78.2 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5d0cdf440f5ee3230c00cef7501f13ff0f9d6cd0&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:5d0cdf440f5ee3230c00cef7501f13ff0f9d6cd0&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img9.doubanio.com/view/photo/l_ratio_poster/public/p868550285.jpg",
+    "rating": "8.6",
+    "genres": [
+      "科幻",
+      "惊悚"
+    ],
+    "director": "雷德利·斯科特",
+    "cast": [
+      "哈里森·福特",
+      "鲁格·豪尔",
+      "肖恩·杨",
+      "爱德华·詹姆斯·奥莫斯",
+      "M·埃梅特·沃尔什"
+    ]
   },
   {
     "hash": "6afe327ced328a0f462e46c79604a1a3b8a797da",
@@ -61,7 +90,24 @@ window.MAGNET_DATA = [
     "size": "72.1 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:9ccdb7ffc67a029533cd0d6ec6bce0b17d129146&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:9ccdb7ffc67a029533cd0d6ec6bce0b17d129146&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img3.doubanio.com/view/photo/l_ratio_poster/public/p462657443.jpg",
+    "rating": "9.2",
+    "genres": [
+      "剧情",
+      "动作",
+      "科幻",
+      "犯罪",
+      "惊悚"
+    ],
+    "director": "克里斯托弗·诺兰",
+    "cast": [
+      "克里斯蒂安·贝尔",
+      "希斯·莱杰",
+      "艾伦·艾克哈特",
+      "迈克尔·凯恩",
+      "玛吉·吉伦哈尔"
+    ]
   },
   {
     "hash": "d9531135e2a1e425fb3fbdb469293c450d5956ae",
@@ -69,7 +115,20 @@ window.MAGNET_DATA = [
     "size": "55.8 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:d9531135e2a1e425fb3fbdb469293c450d5956ae&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:d9531135e2a1e425fb3fbdb469293c450d5956ae&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img1.doubanio.com/view/photo/l_ratio_poster/public/p2561439800.jpg",
+    "rating": "8.8",
+    "genres": [
+      "剧情"
+    ],
+    "director": "奉俊昊",
+    "cast": [
+      "宋康昊",
+      "李善均",
+      "赵汝贞",
+      "崔宇植",
+      "朴素丹"
+    ]
   },
   {
     "hash": "7b9ae08d49070c933dfdbbd80d9a7b65558a151d",
@@ -205,7 +264,25 @@ window.MAGNET_DATA = [
     "size": "58.7 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:230c8fa041c8a95c55b4e7813d4288e3785a77bf&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:230c8fa041c8a95c55b4e7813d4288e3785a77bf&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img3.doubanio.com/view/photo/l_ratio_poster/public/p2892315297.jpg",
+    "rating": "8.5",
+    "genres": [
+      "喜剧",
+      "动作",
+      "科幻",
+      "动画",
+      "奇幻",
+      "冒险"
+    ],
+    "director": "乔伊姆·多斯·桑托斯",
+    "cast": [
+      "沙梅克·摩尔",
+      "海莉·斯坦菲尔德",
+      "奥斯卡·伊萨克",
+      "杰克·约翰逊",
+      "伊萨·雷"
+    ]
   },
   {
     "hash": "65c9bfb925762d4bb10be9b69a9c34e0ffbfa8e7",
@@ -213,7 +290,23 @@ window.MAGNET_DATA = [
     "size": "72.4 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:65c9bfb925762d4bb10be9b69a9c34e0ffbfa8e7&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:65c9bfb925762d4bb10be9b69a9c34e0ffbfa8e7&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img3.doubanio.com/view/photo/l_ratio_poster/public/p2868425292.jpg",
+    "rating": "7.2",
+    "genres": [
+      "剧情",
+      "动作",
+      "犯罪",
+      "悬疑"
+    ],
+    "director": "马特·里夫斯",
+    "cast": [
+      "罗伯特·帕丁森",
+      "佐伊·克罗维兹",
+      "保罗·达诺",
+      "科林·法瑞尔",
+      "杰弗里·怀特"
+    ]
   },
   {
     "hash": "10b368651478f2e6f9d03c81ae7dd3bc16405ffb",
@@ -253,7 +346,23 @@ window.MAGNET_DATA = [
     "size": "62.8 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:ef29b6b3a9fa591b97a4c15285198a47d80793e2&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:ef29b6b3a9fa591b97a4c15285198a47d80793e2&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img3.doubanio.com/view/photo/l_ratio_poster/public/p2677303737.jpg",
+    "rating": "5.8",
+    "genres": [
+      "动作",
+      "科幻",
+      "奇幻",
+      "冒险"
+    ],
+    "director": "赵婷",
+    "cast": [
+      "嘉玛·陈",
+      "理查德·麦登",
+      "安吉丽娜·朱莉",
+      "萨尔玛·海耶克",
+      "基特·哈灵顿"
+    ]
   },
   {
     "hash": "d8bfa7d2badc300f82b7fd55a7a2362abbc3ce09",
@@ -277,7 +386,23 @@ window.MAGNET_DATA = [
     "size": "28.4 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:b3a5b17326329f07f2f4500c62ffa699bc6ed7ee&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:b3a5b17326329f07f2f4500c62ffa699bc6ed7ee&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img9.doubanio.com/view/photo/l_ratio_poster/public/p2902227445.jpg",
+    "rating": "8.1",
+    "genres": [
+      "剧情",
+      "动作",
+      "科幻",
+      "冒险"
+    ],
+    "director": "丹尼斯·维伦纽瓦",
+    "cast": [
+      "提莫西·查拉梅",
+      "赞达亚",
+      "丽贝卡·弗格森",
+      "哈维尔·巴登",
+      "乔什·布洛林"
+    ]
   },
   {
     "hash": "622b8637cbfc62f7e7e904c7e7f2b6d91c677346",
@@ -285,7 +410,25 @@ window.MAGNET_DATA = [
     "size": "62.1 GB",
     "category": "4K HDR",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:622b8637cbfc62f7e7e904c7e7f2b6d91c677346&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80"
+    "magnet": "magnet:?xt=urn:btih:622b8637cbfc62f7e7e904c7e7f2b6d91c677346&tr=udp://open.demonii.com:1337/announce&tr=udp://tracker.openbittorrent.com:80",
+    "poster": "https://img1.doubanio.com/view/photo/l_ratio_poster/public/p2897460998.jpg",
+    "rating": "7.2",
+    "genres": [
+      "剧情",
+      "历史",
+      "爱情",
+      "犯罪",
+      "西部",
+      "悬疑"
+    ],
+    "director": "马丁·斯科塞斯",
+    "cast": [
+      "莱昂纳多·迪卡普里奥",
+      "罗伯特·德尼罗",
+      "莉莉·格莱斯顿",
+      "杰西·普莱蒙",
+      "坦图·卡丁诺"
+    ]
   },
   {
     "hash": "9b923e68b933377d3d38ccb06318675abdc3f682",
@@ -437,7 +580,23 @@ window.MAGNET_DATA = [
     "size": "2.6 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:600b64ff604b38e0e1fa889f5310898aeaed8c03&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:600b64ff604b38e0e1fa889f5310898aeaed8c03&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://img3.doubanio.com/view/photo/l_ratio_poster/public/p2879326392.jpg",
+    "rating": "6.9",
+    "genres": [
+      "科幻",
+      "悬疑",
+      "惊悚",
+      "恐怖"
+    ],
+    "director": "乔丹·皮尔",
+    "cast": [
+      "丹尼尔·卡卢亚",
+      "柯柯·帕尔莫",
+      "布兰登·佩利亚",
+      "迈克尔·维克特",
+      "史蒂文·元"
+    ]
   },
   {
     "hash": "254a332d5f3d68a91963212204013de406715eef",
@@ -501,7 +660,22 @@ window.MAGNET_DATA = [
     "size": "3.2 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:1b352522063ffd60b1d47dd1d5c144babc9f4b00&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:1b352522063ffd60b1d47dd1d5c144babc9f4b00&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://img9.doubanio.com/view/photo/l_ratio_poster/public/p2879787106.jpg",
+    "rating": "8.5",
+    "genres": [
+      "剧情",
+      "动作",
+      "战争"
+    ],
+    "director": "爱德华·贝尔格",
+    "cast": [
+      "费利克斯·卡默雷尔",
+      "阿尔布雷希特·舒赫",
+      "亚伦·希尔默",
+      "丹尼尔·布鲁赫",
+      "塞巴斯蒂安·胡克"
+    ]
   },
   {
     "hash": "49e07a4a98e10f65c6621d65745a107cc5e7e15c",
@@ -509,7 +683,21 @@ window.MAGNET_DATA = [
     "size": "2.4 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:49e07a4a98e10f65c6621d65745a107cc5e7e15c&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:49e07a4a98e10f65c6621d65745a107cc5e7e15c&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://img1.doubanio.com/view/photo/l_ratio_poster/public/p2877252828.jpg",
+    "rating": "7.9",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "director": "马丁·麦克唐纳",
+    "cast": [
+      "科林·法瑞尔",
+      "布莱丹·格里森",
+      "凯瑞·康顿",
+      "巴里·基奥恩",
+      "盖瑞·莱登"
+    ]
   },
   {
     "hash": "a92c0d94849f3de814fa8afe25bbc8bc017cb504",
@@ -525,7 +713,20 @@ window.MAGNET_DATA = [
     "size": "3.4 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:e7df9b8b0f58993c34aef62e9341b2368a383dfe&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:e7df9b8b0f58993c34aef62e9341b2368a383dfe&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://img9.doubanio.com/view/photo/l_ratio_poster/public/p2670263616.jpg",
+    "rating": "7.9",
+    "genres": [
+      "剧情"
+    ],
+    "director": "滨口龙介",
+    "cast": [
+      "西岛秀俊",
+      "三浦透子",
+      "雾岛丽香",
+      "冈田将生",
+      "朴有琳"
+    ]
   },
   {
     "hash": "7cf78b68ab58aa28b025cd7d9e352e8d0c6986d4",
@@ -549,7 +750,21 @@ window.MAGNET_DATA = [
     "size": "2.8 GB",
     "category": "1080p",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:5c6676d89e9ee9bc391e16db131bedb39aed9142&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:5c6676d89e9ee9bc391e16db131bedb39aed9142&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://img1.doubanio.com/view/photo/l_ratio_poster/public/p2687879759.jpg",
+    "rating": "6.9",
+    "genres": [
+      "剧情",
+      "喜剧"
+    ],
+    "director": "保罗·托马斯·安德森",
+    "cast": [
+      "阿拉娜·哈伊姆",
+      "库珀·霍夫曼",
+      "斯凯勒·吉桑多",
+      "玛丽·伊丽莎白·埃利斯",
+      "约翰·迈克尔·辛吉斯"
+    ]
   },
   {
     "hash": "a639cf12d25dd046de5e909211029bcf5ecaf897",
