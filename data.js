@@ -2229,7 +2229,13 @@ window.MAGNET_DATA = [
     "size": "42.3 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:8bd748cdb2c6b6f669cfb00f76d7b480c3fbf3a0&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:8bd748cdb2c6b6f669cfb00f76d7b480c3fbf3a0&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/4MPsj31FTnfXg1NO93lzr3PqNuE.jpg",
+    "rating": "8.0",
+    "genres": [
+      "音乐",
+      "纪录"
+    ]
   },
   {
     "hash": "790219c7f8c6256a4b95b993400ae06ebadaf195",
@@ -2237,7 +2243,13 @@ window.MAGNET_DATA = [
     "size": "12.4 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:790219c7f8c6256a4b95b993400ae06ebadaf195&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:790219c7f8c6256a4b95b993400ae06ebadaf195&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/8GbmgGz77b5FlX7qD8qJwOFR6jS.jpg",
+    "rating": "7.9",
+    "genres": [
+      "纪录",
+      "冒险"
+    ]
   },
   {
     "hash": "377c27a967294150b9687f5f59296ad8b77ccd29",
@@ -2245,7 +2257,12 @@ window.MAGNET_DATA = [
     "size": "4.2 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:377c27a967294150b9687f5f59296ad8b77ccd29&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:377c27a967294150b9687f5f59296ad8b77ccd29&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/xVcmbjuelxzn6rWs2CBCDsa97o1.jpg",
+    "rating": "7.9",
+    "genres": [
+      "纪录"
+    ]
   },
   {
     "hash": "e856757480eeeb24d95ed7823f4b25fa88da4abf",
@@ -2253,7 +2270,13 @@ window.MAGNET_DATA = [
     "size": "4.5 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:e856757480eeeb24d95ed7823f4b25fa88da4abf&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:e856757480eeeb24d95ed7823f4b25fa88da4abf&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/iFNri0fwn1WfCoxf3H3v1z8dCm4.jpg",
+    "rating": "7.8",
+    "genres": [
+      "纪录",
+      "犯罪"
+    ]
   },
   {
     "hash": "a68a755d3026835e0eb983cdcd076338ebd21f3a",
@@ -2261,7 +2284,13 @@ window.MAGNET_DATA = [
     "size": "4.2 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:a68a755d3026835e0eb983cdcd076338ebd21f3a&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:a68a755d3026835e0eb983cdcd076338ebd21f3a&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/jcaM6V2tCtu6iMHDsGLBUbaYgYp.jpg",
+    "rating": "7.5",
+    "genres": [
+      "纪录",
+      "剧情"
+    ]
   },
   {
     "hash": "1e8a3e2c8157c81ba84e9585d3d4100d08f11712",
@@ -2269,7 +2298,10 @@ window.MAGNET_DATA = [
     "size": "8.4 GB",
     "category": "纪录片",
     "source": "BT-Network",
-    "magnet": "magnet:?xt=urn:btih:1e8a3e2c8157c81ba84e9585d3d4100d08f11712&tr=udp://open.demonii.com:1337/announce"
+    "magnet": "magnet:?xt=urn:btih:1e8a3e2c8157c81ba84e9585d3d4100d08f11712&tr=udp://open.demonii.com:1337/announce",
+    "poster": "https://media.themoviedb.org/t/p/w780/a8ymgdC3KKnLTyNSB9TB2013VDz.jpg",
+    "rating": "0.0",
+    "genres": []
   },
   {
     "hash": "7282dd5fc723be359c03cc8d7e947a75469cdc3c",
